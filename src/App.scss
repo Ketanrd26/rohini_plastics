@@ -20,7 +20,7 @@
 *::after,
 * {
   box-sizing: border-box;
-  // border: 1px solid red;
+
   margin: 0px;
   font-family: "Poppins", sans-serif;
   line-height: 120%;
@@ -114,7 +114,7 @@ a {
 .btn{
   width: auto;
   height: auto;
-  padding: calc(var(--unit)/2) var(--unit);
+  padding: calc(var(--unit)/2);
   background-color: var(--accent);
   display: flex;
   justify-content: center;
@@ -128,12 +128,13 @@ overflow-x: hidden;
     width: auto;
     height: auto;
     background-color: var(--white);
-    padding: calc(var(--unit)/2) var(--unit);
+    padding: calc(var(--unit)/2) calc(var(--unit));
+
     font-size: calc(var(--unit));
     font-weight: 500;
     border-radius: 25px;
   
-    transform: translateX(20%);
+    transform: translateX(18%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +144,7 @@ overflow-x: hidden;
   &:hover{
     .inner_text{
       transform: translateX(0);
+     
  
     }
   }
