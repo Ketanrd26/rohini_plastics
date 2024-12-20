@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assests/rohini_plastics_logo.png";
@@ -25,6 +25,8 @@ const Header = () => {
       link_path: "/",
     },
   ];
+
+  const [mobNav, setMobNav] = useState(false)
   return (
     <>
       <div class="header-parent parent">
@@ -95,34 +97,37 @@ const Header = () => {
             </div>
           </div>
 
-          <div class="hamburger">
+          <div class="hamburger"  onClick={()=>setMobNav(!mobNav)} >
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
 
+      {
+        mobNav && 
         <div class="mobsection-header parent">
-          <div class="overlay"></div>
-          <div class="navsection_item">
-            {navItem.map((item, index) => (
-              <Link className="nav_link" key={index} to={item.link_path}>
-                {item.link_name}
-              </Link>
-            ))}
-
-            <Link className="btn">
-              <span class="inner_text">Contact us</span>
+        <div class="overlay"></div>
+        <div class="navsection_item">
+          {navItem.map((item, index) => (
+            <Link className="nav_link" key={index} to={item.link_path}>
+              {item.link_name}
             </Link>
+          ))}
 
-            <div class="social_media_links">
-              <a href="" className="social_l"  ></a>
-              <a href="" className="social_l"  ></a>
-              <a href="" className="social_l"  ></a>
-              <a href="" className="social_l"  ></a>
-            </div>
+          <Link className="btn">
+            <span class="inner_text">Contact us</span>
+          </Link>
+
+          <div class="social_media_links">
+            <a href="" className="social_l"  ></a>
+            <a href="" className="social_l"  ></a>
+            <a href="" className="social_l"  ></a>
+            <a href="" className="social_l"  ></a>
           </div>
         </div>
+      </div>
+      }
       </div>
     </>
   );
