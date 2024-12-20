@@ -1,0 +1,55 @@
+.mini-about-parent {
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+
+  .mini-about-cont {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .left {
+      width: 50%;
+      height: auto;
+      position: relative;
+      border-right: 1px solid var(--accent2);
+
+      .div {
+        background-color: red;
+        width: 40%;
+        aspect-ratio: 1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        
+
+
+        &:nth-child(2){
+            left: 5%;
+            background-color: black;
+            width: 45%;
+            z-index: 1;
+            bottom: 10%;
+        }
+        &:nth-child(3){
+            left: 40%;
+            background-color: blue;
+            width: 30%;
+            z-index: 1;
+            bottom: -10%;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: var((--unit));
+      padding: 0px 20px;
+    }
+  }
+}
