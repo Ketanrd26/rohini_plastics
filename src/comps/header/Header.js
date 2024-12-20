@@ -6,9 +6,6 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 
-
-
-
 const Header = () => {
   const navItem = [
     {
@@ -42,24 +39,20 @@ const Header = () => {
           <div class="contact_info">
             <div class="location">
               <div class="icon">
-              <MdOutlineAlternateEmail />
+                <MdOutlineAlternateEmail />
               </div>
               <div class="content">
                 <h4>Mail Us</h4>
-                <p>
-                rohiniplastic1@gmail.com 
-                </p>
+                <p>rohiniplastic1@gmail.com</p>
               </div>
             </div>
             <div class="location">
               <div class="icon">
-              <IoCall />
+                <IoCall />
               </div>
               <div class="content">
                 <h4>Contact Us</h4>
-                <p>
-                +919850176707
-                </p>
+                <p>+919850176707</p>
               </div>
             </div>
           </div>
@@ -74,37 +67,61 @@ const Header = () => {
                 </Link>
               ))}
 
-              <div class="btn">
+              <Link class="btn">
                 <div class="inner_text">Contact us</div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-
       <div class="mobile_header parent">
         <div class="left">
-        <div class="logo">
+          <div class="logo">
             <img src={logo} alt="" />
             <h1>
               Rohini <br /> Plastics
             </h1>
           </div>
-
         </div>
         <div class="right">
-        <div class="location">
-              <div class="icon">
+          <div class="location">
+            <div class="icon">
               <IoCall />
-              </div>
-              <div class="content">
-                <h4>Contact Us</h4>
-                <p>
-                +919850176707
-                </p>
-              </div>
             </div>
+            <div class="content">
+              <h4>Contact Us</h4>
+              <p>+919850176707</p>
+            </div>
+          </div>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="mobsection-header parent">
+          <div class="overlay"></div>
+          <div class="navsection_item">
+            {navItem.map((item, index) => (
+              <Link className="nav_link" key={index} to={item.link_path}>
+                {item.link_name}
+              </Link>
+            ))}
+
+            <Link className="btn">
+              <span class="inner_text">Contact us</span>
+            </Link>
+
+            <div class="social_media_links">
+              <a href="" className="social_l"  ></a>
+              <a href="" className="social_l"  ></a>
+              <a href="" className="social_l"  ></a>
+              <a href="" className="social_l"  ></a>
+            </div>
+          </div>
         </div>
       </div>
     </>

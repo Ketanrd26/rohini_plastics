@@ -1,0 +1,110 @@
+.herosection_parent {
+  width: 100%;
+  height: 100vh;
+
+  .mySwiper {
+    width: 100%;
+    height: 100%;
+
+    .swiperslide {
+      width: 100%;
+      height: 100%;
+      background-color: var(--accent2);
+
+      .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.486);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .content {
+            width: 500px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .box {
+              height: 100%;
+              aspect-ratio: 1;
+              background-color: var(--accent2);
+              border: 3px solid var(--white);
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              .overlay {
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.486);
+              }
+            }
+
+            .tagline {
+              position: absolute;
+              left: 10%;
+              width: 28ch;
+              top: 20%;
+              color: var(--white);
+              background-color: var(--accent2);
+
+              .overlay {
+                padding: 10px 20px 40px 20px;
+                line-height: 140%;
+                text-align: left;
+              }
+            }
+          }
+
+          .abstract{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: 0.5;
+          }
+
+        }
+
+        .right {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .swiper-pagination-bullet {
+      width: 80px;
+      height: 3px;
+      background-color: var(--white);
+      border-radius: 10px;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: var(--accent);
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      left: -20%;
+      bottom: 5%;
+    }
+  }
+}
