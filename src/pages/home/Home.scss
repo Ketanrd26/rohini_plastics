@@ -112,7 +112,7 @@
             width: 100%;
             aspect-ratio: 1;
             background-color: red;
-            border-radius: calc(var(--unit)/2);
+            border-radius: calc(var(--unit) / 2);
           }
         }
 
@@ -157,11 +157,11 @@
         height: 50%;
         background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
           url("../../assests/family_v.webp");
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: var(--white);
-          font-size: calc(var(--unit));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        font-size: calc(var(--unit));
       }
 
       .bottom {
@@ -199,6 +199,100 @@
   }
 }
 
+.quality-parent {
+  width: 100%;
+  height: auto;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: var(--unit);
+
+  .left {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--unit);
+    flex-direction: column;
+    margin: auto;
+    padding: 40px 40px;
+  }
+
+  .right {
+    width: 50%;
+    height: auto;
+    position: relative;
+
+    .coloured_div {
+      width: 70%;
+      height: 80%;
+      background-color: var(--accent2);
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .photo_div {
+      width: 50%;
+      height: 80%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../assests/quality_policy.webp");
+      border-radius: var(--unit);
+    }
+  }
+}
+
+.testimoneal-parent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 40px 0px;
+
+  .left {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+
+    h3 {
+      font-size: calc(var(--unit) * 10);
+      line-height: 100%;
+    }
+  }
+
+  .right {
+    width: 50%;
+    height: auto;
+    background-color: var(--accent);
+ 
+    position: relative;
+
+    .mySwiper {
+      width: 400px;
+      height: 80%;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .mini-about-parent {
     .mini-about-cont {
@@ -230,6 +324,28 @@
         width: 100%;
         height: auto;
         padding: 20px;
+      }
+    }
+  }
+
+  .quality-parent {
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .right {
+      width: 100%;
+      height: 500px;
+
+      .photo_div {
+        left: 10%;
+        top: 50% !important;
+        transform: translateY(-50%);
+        width: 250px;
+        height: 250px;
       }
     }
   }

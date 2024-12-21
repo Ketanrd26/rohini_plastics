@@ -1,9 +1,17 @@
 import React from "react";
-import { SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Herosection from "../../comps/herosection/Herosection";
 import "./Home.scss";
 
 import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper/modules";
 
 const Home = () => {
   return (
@@ -35,9 +43,9 @@ const Home = () => {
               their default model text, and a search 
             </p>
 
-            <div class="btn">
+            <Link class="btn" to="/about">
               <div class="inner_text">Know More</div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -82,9 +90,7 @@ const Home = () => {
         <div class="values-cont cont">
           <div class="card">
             <div class="top bg-img-cover">
-              <h2>
-                Family Values
-              </h2>
+              <h2>Family Values</h2>
             </div>
             <div class="bottom">
               <p>
@@ -94,14 +100,12 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <FaHeart />
+              <FaHeart />
             </div>
           </div>
           <div class="card">
             <div class="top bg-img-cover">
-              <h2>
-                Family Values
-              </h2>
+              <h2>Family Values</h2>
             </div>
             <div class="bottom">
               <p>
@@ -111,14 +115,12 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <FaHeart />
+              <FaHeart />
             </div>
           </div>
           <div class="card">
             <div class="top bg-img-cover">
-              <h2>
-                Family Values
-              </h2>
+              <h2>Family Values</h2>
             </div>
             <div class="bottom">
               <p>
@@ -128,14 +130,12 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <FaHeart />
+              <FaHeart />
             </div>
           </div>
           <div class="card">
             <div class="top bg-img-cover">
-              <h2>
-                Family Values
-              </h2>
+              <h2>Family Values</h2>
             </div>
             <div class="bottom">
               <p>
@@ -145,13 +145,61 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <FaHeart />
+              <FaHeart />
             </div>
           </div>
         </div>
       </div>
 
+      {/* quality policy */}
+
+      <div class="quality-parent parent">
+        <div class="left cont">
+          <h3>OUR QUALITY POLICY</h3>
+          <p>
+            We at.Rohini Plastic are committed to manufacture of Injection
+            Molded Plastic Components & Engineering Components meeting Customer
+            satisfaction within stipulated time with cost effectiveness.
+          </p>
+          <p>
+            We are committed to maintain effective Quality Management System
+            Through continual improvement of our product with Customer
+            Satisfaction & training needs of our employees.
+          </p>
+          <p>
+            The objectives will be maintained, measured & analyzed periodically
+            to achieve our target. “
+          </p>
+        </div>
+
+        <div class="right">
+          <div class="coloured_div"></div>
+
+          <div class="photo_div bg-img-cover"></div>
+        </div>
+      </div>
+
+      {/* testiomneal */}
+
+      <div class="testimoneal-parent parent">
+        <div class="left">
+          <h3>25</h3>
+          <p>Years Of Experience</p>
+        </div>
+        <div className="right">
+      <Swiper navigation={true}
+        slidesPerView={1}
       
+      modules={[Navigation]} className="mySwiper">
+        <SwiperSlide className="swiper-slide">
+          <div className="slide-content">Slide 1</div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="slide-content">Slide 2</div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+      </div>
     </>
   );
 };
