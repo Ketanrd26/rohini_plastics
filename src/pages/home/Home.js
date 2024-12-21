@@ -3,6 +3,8 @@ import { SwiperSlide } from "swiper/react";
 import Herosection from "../../comps/herosection/Herosection";
 import "./Home.scss";
 
+import { FaHeart } from "react-icons/fa";
+
 const Home = () => {
   return (
     <>
@@ -75,8 +77,81 @@ const Home = () => {
         </div>
       </div>
 
-
       {/* our values */}
+      <div class="values-parent parent">
+        <div class="values-cont cont">
+          <div class="card">
+            <div class="top bg-img-cover">
+              <h2>
+                Family Values
+              </h2>
+            </div>
+            <div class="bottom">
+              <p>
+                Our family includes respect honesty, commun ication, flexiblity
+                & responsiblity
+              </p>
+            </div>
+
+            <div class="icon">
+            <FaHeart />
+            </div>
+          </div>
+          <div class="card">
+            <div class="top bg-img-cover">
+              <h2>
+                Family Values
+              </h2>
+            </div>
+            <div class="bottom">
+              <p>
+                Our family includes respect honesty, commun ication, flexiblity
+                & responsiblity
+              </p>
+            </div>
+
+            <div class="icon">
+            <FaHeart />
+            </div>
+          </div>
+          <div class="card">
+            <div class="top bg-img-cover">
+              <h2>
+                Family Values
+              </h2>
+            </div>
+            <div class="bottom">
+              <p>
+                Our family includes respect honesty, commun ication, flexiblity
+                & responsiblity
+              </p>
+            </div>
+
+            <div class="icon">
+            <FaHeart />
+            </div>
+          </div>
+          <div class="card">
+            <div class="top bg-img-cover">
+              <h2>
+                Family Values
+              </h2>
+            </div>
+            <div class="bottom">
+              <p>
+                Our family includes respect honesty, commun ication, flexiblity
+                & responsiblity
+              </p>
+            </div>
+
+            <div class="icon">
+            <FaHeart />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
     </>
   );
 };
