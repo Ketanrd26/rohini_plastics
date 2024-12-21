@@ -1,7 +1,7 @@
 .mini-about-parent {
   width: 100%;
   height: auto;
-  padding: 40px 0px;
+  padding: 50px 0px;
 
   .mini-about-cont {
     display: flex;
@@ -13,31 +13,45 @@
       height: auto;
       position: relative;
       border-right: 1px solid var(--accent2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .div {
-        background-color: red;
+        background-color: var(--accent);
         width: 40%;
         aspect-ratio: 1;
         position: absolute;
-        left: 0;
-        bottom: 0;
-        
+        left: 30%;
+        border-radius: calc(var(--unit) / 2);
+        transform: translateX(-50%);
+        top: 60%;
+        transform: translateY(-50%);
+        box-shadow: var(--shadow);
+      }
 
+      .div2 {
+        position: absolute;
+        left: 35%;
+        background-image: url("../../assests/about_img_first.webp");
+        width: 40%;
+        aspect-ratio: 1;
+        z-index: 1;
+        top: 0;
+        box-shadow: var(--shadow);
+        border-radius: calc(var(--unit) / 2);
+      }
 
-        &:nth-child(2){
-            left: 5%;
-            background-color: black;
-            width: 45%;
-            z-index: 1;
-            bottom: 10%;
-        }
-        &:nth-child(3){
-            left: 40%;
-            background-color: blue;
-            width: 30%;
-            z-index: 1;
-            bottom: -10%;
-        }
+      .div3 {
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        background-image: url("../../assests/about_img_second.webp");
+        width: 30%;
+        aspect-ratio: 1;
+        z-index: 1;
+        box-shadow: var(--shadow);
+        border-radius: calc(var(--unit) / 2);
       }
     }
 
@@ -49,7 +63,150 @@
       justify-content: center;
       align-items: flex-start;
       gap: var((--unit));
-      padding: 0px 20px;
+      padding: 0px calc(var(--unit) * 2);
     }
+  }
+}
+
+
+.activities_parent {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  background-color: var(--lightgrey);
+
+  .activities_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--unit)*2);
+   flex-direction: column;
+   
+
+   h1{
+    color: var(--accent);
+   }
+
+   .card_list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--unit)*2);
+    flex-wrap: wrap;
+
+
+    .card{
+      width: calc(100% / 2.5);
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--white);
+      padding: 30px 20px;
+      gap: calc(var(--unit)*2);
+
+      .left{
+        width: 30%;
+        height: auto;
+
+        .icon{
+          width: 100%;
+          aspect-ratio: 1;
+          background-color: red;
+        }
+      }
+
+      .content{
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: calc(var(--unit)/2);
+      }
+    }
+   }
+    
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mini-about-parent {
+    .mini-about-cont {
+      flex-direction: column !important;
+
+      .left {
+        width: 100%;
+        height: 500px;
+        border-right: 0px !important;
+        border-bottom: 1px solid var(--accent2);
+
+        .div {
+          left: 20% ;
+          top: 45%;
+        }
+
+        .div2 {
+          top: 0;
+          left: 25%;
+        }
+
+        .div3{
+          left: 45%;
+          top: 40%;
+        }
+      }
+
+      .right {
+        width: 100%;
+        height: auto;
+        padding: 20px ;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .mini-about-parent{
+
+ .mini-about-cont{
+
+  .left{
+    height: 300px;
+ 
+  }
+    }
+  }
+
+
+  .activities_parent{
+
+    .activities_cont{
+
+
+      .card_list{
+        flex-direction: column;
+
+        .card{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 550px){
+  .mini-about-parent{
+    .mini-about-cont{
+
+      .left{
+        height: 250px;
+      }
+    }
+
   }
 }
