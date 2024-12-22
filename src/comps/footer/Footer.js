@@ -28,7 +28,7 @@ const Footer = () => {
         <div class="footer_cont cont">
           <div class="left">
             <img src={logo} alt="" />
-            <h1>Rohini Plastics</h1>
+            <h1>Rohini <br/> Plastics</h1>
           </div>
           <div class="middle">
             {navItem.map((item, index) => (
