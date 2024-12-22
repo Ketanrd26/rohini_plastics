@@ -3,6 +3,10 @@ import "./Footer.scss";
 import logo from "../../assests/rohini_plastics_logo.png";
 import footer_img from "../../assests/footer_img.png";
 import { Link } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 const Footer = () => {
   const navItem = [
     {
@@ -45,18 +49,18 @@ const Footer = () => {
             </Link>
           </div>
           <div class="social_media_links">
-            <div class="icon">
-                
-            </div>
-            <div class="icon">
-
-            </div>
-            <div class="icon">
-
-            </div>
-            <div class="icon">
-
-            </div>
+            <a class="icon">
+            <FaFacebookF />
+            </a>
+            <a class="icon">
+            <BsTwitterX />
+            </a>
+            <a class="icon">
+            <FaWhatsapp />
+            </a>
+            <a class="icon">
+            <FaGoogle />
+            </a>
           </div>
         </div>
         <div class="image">

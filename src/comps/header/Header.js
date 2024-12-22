@@ -31,12 +31,12 @@ const Header = () => {
     <>
       <div class="header-parent parent">
         <div class="header_left">
-          <div class="logo">
+          <Link to="/" class="logo">
             <img src={logo} alt="" />
             <h1>
               Rohini <br /> Plastics
             </h1>
-          </div>
+          </Link>
 
           <div class="contact_info">
             <div class="location">
