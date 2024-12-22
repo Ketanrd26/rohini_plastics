@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Herosection from "../../comps/herosection/Herosection";
 import "./Home.scss";
-
+import { BsArrowDown } from "react-icons/bs";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import dummy_image from "../../assests/images.jpeg";
+import { FaStar } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,6 +17,12 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const Home = () => {
+
+  
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init();
+  }, []);
   return (
     <>
       {/*  herosection */}
@@ -24,13 +33,13 @@ const Home = () => {
 
       <div class="mini-about-parent parent">
         <div class="mini-about-cont cont">
-          <div class="left">
+          <div class="left" data-aos="fade-up">
             <div class="div"></div>
             <div class="div2 bg-img-cover"></div>
             <div class="div3 bg-img-cover"></div>
           </div>
 
-          <div class="right">
+          <div class="right"  data-aos="fade-down">
             <h3>It is a long established fact fact</h3>
 
             <p>
@@ -57,7 +66,7 @@ const Home = () => {
           <h1>Activities</h1>
 
           <div class="card_list">
-            <div class="card">
+            <div class="card"  data-aos="fade-up">
               <div class="left">
                 <div class="icon"></div>
               </div>
@@ -69,7 +78,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <div class="left">
                 <div class="icon"></div>
               </div>
@@ -88,7 +97,7 @@ const Home = () => {
       {/* our values */}
       <div class="values-parent parent">
         <div class="values-cont cont">
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-easing="ease-in-sine">
             <div class="top bg-img-cover">
               <h2>Family Values</h2>
             </div>
@@ -103,7 +112,7 @@ const Home = () => {
               <FaHeart />
             </div>
           </div>
-          <div class="card">
+          <div class="card"data-aos="fade-down" data-aos-easing="ease-in-sine" >
             <div class="top bg-img-cover">
               <h2>Family Values</h2>
             </div>
@@ -118,7 +127,7 @@ const Home = () => {
               <FaHeart />
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-easing="ease-in-sine" >
             <div class="top bg-img-cover">
               <h2>Family Values</h2>
             </div>
@@ -133,7 +142,7 @@ const Home = () => {
               <FaHeart />
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-down" data-aos-easing="ease-in-sine" >
             <div class="top bg-img-cover">
               <h2>Family Values</h2>
             </div>
@@ -154,7 +163,7 @@ const Home = () => {
       {/* quality policy */}
 
       <div class="quality-parent parent">
-        <div class="left cont">
+        <div class="left cont"  data-aos="fade-down" >
           <h3>OUR QUALITY POLICY</h3>
           <p>
             We at.Rohini Plastic are committed to manufacture of Injection
@@ -175,7 +184,7 @@ const Home = () => {
         <div class="right">
           <div class="coloured_div"></div>
 
-          <div class="photo_div bg-img-cover"></div>
+          <div class="photo_div bg-img-cover"  data-aos="fade-up" ></div>
         </div>
       </div>
 
@@ -187,18 +196,49 @@ const Home = () => {
           <p>Years Of Experience</p>
         </div>
         <div className="right">
-      <Swiper navigation={true}
-        slidesPerView={1}
-      
-      modules={[Navigation]} className="mySwiper">
-        <SwiperSlide className="swiper-slide">
-          <div className="slide-content">Slide 1</div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="slide-content">Slide 2</div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+          <Swiper
+            slidesPerView={1}
+            navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
+            modules={[Navigation]}
+            className="mySwiper"
+            
+          >
+            <SwiperSlide className="swiper-slide" data-aos="flip-left"  >
+              <div className="slide-content">
+                <div class="top_side">
+                  <img src={dummy_image} alt="" />
+                  <div class="right_side">
+                    <h1 class="name">Lorem lipsum</h1>
+                    <div class="star">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                  </div>
+                </div>
+                <div class="content">
+                 <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Tenetur labore ad architecto vel obcaecati neque debitis
+                  provident blanditiis et iure!
+                 </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="slide-content">Slide 2</div>
+            </SwiperSlide>
+          </Swiper>
+
+          <div className="custom-prev">
+            <BsArrowDown />
+          </div>
+          <div className="custom-next">
+            <BsArrowDown />
+          </div>
+        </div>
       </div>
     </>
   );
