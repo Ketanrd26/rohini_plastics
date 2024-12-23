@@ -15,7 +15,7 @@ const Footer = () => {
     },
     {
       link_name: "About",
-      link_path: "/",
+      link_path: "/about",
     },
     {
       link_name: "Services",
