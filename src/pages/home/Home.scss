@@ -238,10 +238,23 @@
       width: 50%;
       height: 80%;
       position: absolute;
+      transform: translate(10px, 5px);
       bottom: 0;
       left: 0;
       background-image: url("../../assests/quality_policy.webp");
       border-radius: var(--unit);
+      animation: floating 4s linear infinite;
+
+
+      @keyframes floating {
+        0%{
+          transform: translate(-20px, 5px);
+        }50%{
+          transform: translate(0, 0);
+        }100%{
+          transform: translate(-20px, 5px);
+        }
+      }
     }
   }
 }

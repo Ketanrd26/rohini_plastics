@@ -40,8 +40,20 @@
               background-color: var(--accent2);
               border: 3px solid var(--white);
               position: absolute;
+              transform-origin: right bottom;
               top: 0;
               left: 0;
+              animation: scaleing 1s linear forwards;
+
+              @keyframes scaleing {
+              from{
+                transform: scale(0);
+                opacity: 0;
+              }to{
+                transform: scale(1);
+                opacity: 1;
+              }
+              }
 
               .overlay {
                 height: 100%;
@@ -57,6 +69,18 @@
               top: 20%;
               color: var(--white);
               background-color: var(--accent2);
+              animation: swipeing 1s linear forwards;
+
+
+              @keyframes swipeing {
+                from{
+                  left: 0;
+                  opacity: 0;
+                }to{
+                  left: 10%;
+                  opacity: 1;
+                }
+              }
 
               .overlay {
                 padding: 10px 20px 40px 20px;

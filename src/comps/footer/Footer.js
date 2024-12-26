@@ -23,7 +23,7 @@ const Footer = () => {
     },
     {
       link_name: "Our Products",
-      link_path: "/",
+      link_path: "/products",
     },
   ];
   return (

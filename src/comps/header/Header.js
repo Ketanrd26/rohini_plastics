@@ -22,7 +22,7 @@ const Header = () => {
     },
     {
       link_name: "Our Products",
-      link_path: "/",
+      link_path: "/products",
     },
   ];
 
@@ -69,7 +69,7 @@ const Header = () => {
                 </Link>
               ))}
 
-              <Link class="btn">
+              <Link class="btn" to="/contact">
                 <div class="inner_text">Contact us</div>
               </Link>
             </div>
@@ -115,7 +115,7 @@ const Header = () => {
             </Link>
           ))}
 
-          <Link className="btn">
+          <Link className="btn"  to="/contact" >
             <span class="inner_text">Contact us</span>
           </Link>
 

@@ -6,27 +6,53 @@ import dummy_img from "../../assests/images.jpeg";
 
 import vision_img from "../../assests/vision_img 1.png";
 import mission_img from "../../assests/mission_icon 1.png";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+
+// client 
+import prima from "../../assests/clientts/prima.jpg";
+import ansox from "../../assests/clientts/ansox.jpg";
+import astron from "../../assests/clientts/astron.jpg";
 
 const About = () => {
   const coreValue = [
     {
       heading: "Commitment",
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      
     },
     {
       heading: "Commitment",
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-
     },
     {
       heading: "Commitment",
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-
     },
-
-
   ];
+
+  const clients = [
+    {
+      title:"Prima pvt. ltd",
+      image:prima
+    },
+    {
+      title:"Ansox",
+      image:ansox
+    },
+    {
+      title:"Astron Switch Craft",
+      image:astron
+    },
+  ]
   return (
     <>
       <PagetoTop
@@ -179,42 +205,48 @@ const About = () => {
             <p className="sub_text">We Are Manufacured</p>
             <h1 className="sub_heading"> Our Clients </h1>
           </div>
-          <div class="clients">
-            <div class="cleint bg-img-cover">
-              <h1>Lorem lipsum</h1>
-            </div>
-            <div class="cleint bg-img-cover">
-              <h1>Lorem lipsum</h1>
-            </div>
-            <div class="cleint bg-img-cover">
-              <h1>Lorem lipsum</h1>
-            </div>
-          </div>
+          <Swiper
+            slidesPerView={4}
+            centeredSlides={false}
+            spaceBetween={0}
+            grabCursor={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+          {clients.map((item,index)=>(
+ <SwiperSlide  className="swiper-slide" >
+ <div class="cleint bg-img-cover" style={{backgroundImage:`url(${item.image})`}} >
+   <h1>{item.title}</h1>
+ </div>
+</SwiperSlide>
+          ))}
+             
+            
+          
+          </Swiper>
         </div>
       </div>
 
       <div class="core_values parent">
         <div class="core_values_cont cont">
-
-          {
-            coreValue.map((item,index)=>(
-              <div class="content">
+          {coreValue.map((item, index) => (
+            <div class="content">
               <div class="left">
                 <div class="icon"></div>
               </div>
-  
+
               <div class="right">
                 <h2>{item.heading}</h2>
-                <p>
-                 {item.para}
-                </p>
+                <p>{item.para}</p>
               </div>
-  
+
               <div class="circle"></div>
             </div>
-            ))
-          }
-        
+          ))}
+
           <div class="line"></div>
         </div>
       </div>
