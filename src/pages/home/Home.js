@@ -16,9 +16,13 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 
-const Home = () => {
+// icons
+import fm from "../../assests/icons//family.gif";
+import Innovative from "../../assests/icons/Innovative.gif";
+import pb from "../../assests/icons/task.gif";
+import call from "../../assests/icons/24-hours-support.gif";
 
-  
+const Home = () => {
   useEffect(() => {
     // Initialize AOS
     AOS.init();
@@ -39,7 +43,7 @@ const Home = () => {
             <div class="div3 bg-img-cover"></div>
           </div>
 
-          <div class="right"  data-aos="fade-down">
+          <div class="right" data-aos="fade-down">
             <h3>It is a long established fact fact</h3>
 
             <p>
@@ -66,7 +70,7 @@ const Home = () => {
           <h1>Activities</h1>
 
           <div class="card_list">
-            <div class="card"  data-aos="fade-up">
+            <div class="card" data-aos="fade-up">
               <div class="left">
                 <div class="icon"></div>
               </div>
@@ -104,57 +108,60 @@ const Home = () => {
             <div class="bottom">
               <p>
                 Our family includes respect honesty, commun ication, flexiblity
-                & responsiblity
+                & responsiblity.
               </p>
             </div>
 
             <div class="icon">
-              <FaHeart />
+            <img src={fm} alt=""/>
             </div>
           </div>
-          <div class="card"data-aos="fade-down" data-aos-easing="ease-in-sine" >
-            <div class="top bg-img-cover">
-              <h2>Family Values</h2>
+          <div class="card" data-aos="fade-down" data-aos-easing="ease-in-sine">
+            <div class="top innovative bg-img-cover">
+              <h2>Innovative Thinking</h2>
             </div>
             <div class="bottom">
               <p>
-                Our family includes respect honesty, commun ication, flexiblity
-                & responsiblity
+                We work with our clients to provide genuine long term innovative
+                solution not just a quick fix.
               </p>
             </div>
 
             <div class="icon">
-              <FaHeart />
+            <img src={Innovative} alt=""/>
+
             </div>
           </div>
-          <div class="card" data-aos="fade-up" data-aos-easing="ease-in-sine" >
-            <div class="top bg-img-cover">
-              <h2>Family Values</h2>
+          <div class="card" data-aos="fade-up" data-aos-easing="ease-in-sine">
+            <div class="top pb bg-img-cover">
+              <h2>Problem Solving</h2>
             </div>
             <div class="bottom">
               <p>
-                Our family includes respect honesty, commun ication, flexiblity
-                & responsiblity
+                We treat every projects as if it were our own. we can work with
+                you to find every best solution.
               </p>
             </div>
 
             <div class="icon">
-              <FaHeart />
+            <img src={pb} alt=""/>
+
             </div>
           </div>
-          <div class="card" data-aos="fade-down" data-aos-easing="ease-in-sine" >
-            <div class="top bg-img-cover">
-              <h2>Family Values</h2>
+          <div class="card" data-aos="fade-down" data-aos-easing="ease-in-sine">
+            <div class="top cs bg-img-cover">
+              <h2>Customer Support</h2>
             </div>
             <div class="bottom">
               <p>
-                Our family includes respect honesty, commun ication, flexiblity
-                & responsiblity
+                Our Service first attitude drives everything we do. we are
+                always available for our clients
               </p>
             </div>
 
             <div class="icon">
-              <FaHeart />
+            <img src={call} alt=""/>
+
             </div>
           </div>
         </div>
@@ -163,7 +170,7 @@ const Home = () => {
       {/* quality policy */}
 
       <div class="quality-parent parent">
-        <div class="left cont"  data-aos="fade-down" >
+        <div class="left cont" data-aos="fade-down">
           <h3>OUR QUALITY POLICY</h3>
           <p>
             We at.Rohini Plastic are committed to manufacture of Injection
@@ -184,7 +191,7 @@ const Home = () => {
         <div class="right">
           <div class="coloured_div"></div>
 
-          <div class="photo_div bg-img-cover"  data-aos="fade-up" ></div>
+          <div class="photo_div bg-img-cover" data-aos="fade-up"></div>
         </div>
       </div>
 
@@ -201,9 +208,8 @@ const Home = () => {
             navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
             modules={[Navigation]}
             className="mySwiper"
-            
           >
-            <SwiperSlide className="swiper-slide" data-aos="flip-left"  >
+            <SwiperSlide className="swiper-slide" data-aos="flip-left">
               <div className="slide-content">
                 <div class="top_side">
                   <img src={dummy_image} alt="" />
@@ -219,11 +225,11 @@ const Home = () => {
                   </div>
                 </div>
                 <div class="content">
-                 <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Tenetur labore ad architecto vel obcaecati neque debitis
-                  provident blanditiis et iure!
-                 </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Tenetur labore ad architecto vel obcaecati neque debitis
+                    provident blanditiis et iure!
+                  </p>
                 </div>
               </div>
             </SwiperSlide>

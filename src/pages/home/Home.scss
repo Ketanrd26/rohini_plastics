@@ -162,6 +162,21 @@
         align-items: center;
         color: var(--white);
         font-size: calc(var(--unit));
+
+
+       &.innovative{
+          background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
+          url("../../assests/innovative.webp");
+        }
+
+        &.pb{
+          background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
+          url("../../assests/problem_solving.webp");
+        }
+        &.cs{
+          background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
+          url("../../assests/customer_support.webp");
+        }
       }
 
       .bottom {
@@ -173,6 +188,7 @@
         align-items: flex-end;
         p {
           text-align: center;
+          font-size: calc(var(--unit) - 1px);
         }
       }
 
@@ -189,11 +205,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        filter: hue-rotate(54deg);
 
-        svg {
-          font-size: calc(var(--unit) * 2);
-          color: var(--accent2);
-        }
+       img{
+        width: 80%;
+       }
       }
     }
   }

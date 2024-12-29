@@ -15,6 +15,14 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 
+
+// icons
+
+import Commitment from "../../assests/icons/commitment.gif";
+import Innovative from "../../assests/icons/Innovative.gif";
+import Business_Ethics from "../../assests/icons/Business_Ethics.gif";
+import Grow_Together from "../../assests/icons/Grow_Together.gif";
+
 // client
 import prima from "../../assests/clientts/prima.webp";
 import ansox from "../../assests/clientts/ansox.png";
@@ -28,18 +36,22 @@ const About = () => {
   const coreValue = [
     {
       heading: "Commitment",
+      icon:Commitment,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
-      heading: "innovative",
+      heading: "Innovative",
+      icon:Innovative,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
-      heading: "business ethics",
+      heading: "Business Ethics",
+      icon:Business_Ethics,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
-      heading: "grow together",
+      heading: "Grow Together",
+      icon:Grow_Together,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
   ];
@@ -231,7 +243,9 @@ const About = () => {
           {coreValue.map((item, index) => (
             <div class="content">
               <div class="left">
-                <div class="icon"></div>
+                <div class="icon"   >
+                  <img src={item.icon} alt=""/>
+                </div>
               </div>
 
               <div class="right">

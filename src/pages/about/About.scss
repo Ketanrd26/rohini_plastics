@@ -293,24 +293,23 @@
   }
 }
 
-.clients_parent{
+.clients_parent {
   width: 100%;
   height: auto;
   padding: 40px 0px;
 
-  .client_cont{
+  .client_cont {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: calc(var(--unit));
     flex-direction: column;
 
-    h3{
-      font-size: calc(var(--unit)*2);
+    h3 {
+      font-size: calc(var(--unit) * 2);
     }
 
-
-    .client_list{
+    .client_list {
       width: 100%;
       height: 200px;
       display: flex;
@@ -320,57 +319,54 @@
       overflow: hidden;
       position: relative;
 
-      .client_logo{
+      .client_logo {
         height: 50px;
         animation: swipelogo 10s linear infinite;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 100%;
-       
-        
-        &:nth-child(2){
+
+        &:nth-child(2) {
           animation-delay: 1.5s;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           animation-delay: 2.5s;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
           animation-delay: 3.8s;
         }
-        &:nth-child(5){
+        &:nth-child(5) {
           animation-delay: 5.3s;
         }
-        &:nth-child(6){
+        &:nth-child(6) {
           animation-delay: 6.9s;
         }
-        &:nth-child(7){
+        &:nth-child(7) {
           animation-delay: 8.2s;
         }
-      
 
         @keyframes swipelogo {
-          0%{
+          0% {
             left: 100%;
           }
-          100%{
-           left: -13%;
+          100% {
+            left: -13%;
           }
         }
       }
 
-
-      &::before{
+      &::before {
         content: "";
         position: absolute;
         top: 0;
         right: 0;
         height: 100%;
         width: 20px;
-       background: linear-gradient(to left,white,transparent) ;
-       z-index: 99;
+        background: linear-gradient(to left, white, transparent);
+        z-index: 99;
       }
-      &::after{
+      &::after {
         height: 100%;
         width: 20px;
         background: linear-gradient(to left, transparent, white);
@@ -381,7 +377,6 @@
         left: 0;
       }
     }
- 
   }
 }
 
@@ -414,8 +409,17 @@
         .icon {
           width: 25%;
           aspect-ratio: 1;
-          border-radius: 50%;
-          background-color: var(--lightgrey);
+        
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          filter: hue-rotate(54deg);
+
+
+          img{
+            width: 100%;
+           
+          }
         }
       }
 
@@ -460,12 +464,11 @@
 
 @media only screen and (max-width: 670px) {
   .clients_parent {
-    .client_cont{
-      .client_list{
-  gap: 30px;
-        .client_logo{
-height: 30px;
-         
+    .client_cont {
+      .client_list {
+        gap: 30px;
+        .client_logo {
+          height: 30px;
         }
       }
     }
@@ -581,41 +584,37 @@ height: 30px;
     }
   }
 
- .clients_parent {
+  .clients_parent {
+    .client_cont {
+      .client_list {
+        gap: 0px !important;
+        height: 50px;
+        .client_logo {
+          height: 20px;
 
-  .client_cont{
-
-    .client_list{
-gap: 0px !important;
-height: 50px;
-      .client_logo{
-        height: 20px;
-
-        &:nth-child(1){
-          animation-delay: 2s !important;
+          &:nth-child(1) {
+            animation-delay: 2s !important;
+          }
+          &:nth-child(2) {
+            animation-delay: 3.2s !important;
+          }
+          &:nth-child(3) {
+            animation-delay: 4s !important;
+          }
+          &:nth-child(4) {
+            animation-delay: 5.3s !important;
+          }
+          &:nth-child(5) {
+            animation-delay: 7s !important;
+          }
+          &:nth-child(6) {
+            animation-delay: 8.7s !important;
+          }
+          &:nth-child(7) {
+            animation-delay: 10.2s !important;
+          }
         }
-        &:nth-child(2){
-          animation-delay: 3.2s !important;
-        }
-        &:nth-child(3){
-          animation-delay: 4s !important;
-        }
-        &:nth-child(4){
-          animation-delay: 5.3s !important;
-        }
-        &:nth-child(5){
-          animation-delay: 7s !important;
-        }
-        &:nth-child(6){
-          animation-delay: 8.7s !important;
-        }
-        &:nth-child(7){
-          animation-delay: 10.2s !important;
-        }
-      
-        
       }
     }
   }
- }
 }

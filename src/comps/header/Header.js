@@ -26,7 +26,11 @@ const Header = () => {
     },
   ];
 
-  const [mobNav, setMobNav] = useState(false)
+  const [mobNav, setMobNav] = useState(false);
+
+
+
+
   return (
     <>
       <div class="header-parent parent">
@@ -110,20 +114,20 @@ const Header = () => {
         <div class="overlay"></div>
         <div class="navsection_item">
           {navItem.map((item, index) => (
-            <Link className="nav_link" key={index} to={item.link_path}>
+            <Link className="nav_link" onClick={()=>setMobNav(false)} key={index} to={item.link_path}>
               {item.link_name}
             </Link>
           ))}
 
-          <Link className="btn"  to="/contact" >
+          <Link className="btn"  to="/contact" onClick={()=>setMobNav(false)} >
             <span class="inner_text">Contact us</span>
           </Link>
 
           <div class="social_media_links">
-            <a href="" className="social_l"  ></a>
-            <a href="" className="social_l"  ></a>
-            <a href="" className="social_l"  ></a>
-            <a href="" className="social_l"  ></a>
+            <a href="" className="social_l" onClick={()=>setMobNav(false)}  ></a>
+            <a href="" className="social_l" onClick={()=>setMobNav(false)} ></a>
+            <a href="" className="social_l" onClick={()=>setMobNav(false)} ></a>
+            <a href="" className="social_l" onClick={()=>setMobNav(false)} ></a>
           </div>
         </div>
       </div>

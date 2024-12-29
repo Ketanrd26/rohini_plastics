@@ -23,7 +23,7 @@ const Herosection = () => {
           spaceBetween={0}
           centeredSlides={true}
           autoplay={{
-            delay: 2500000000000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -32,6 +32,52 @@ const Herosection = () => {
           modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
+          <SwiperSlide className="swiperslide">
+            <div class="overlay">
+              <div class="left">
+                <div class="content">
+                  <div class="box">
+                    <div class="overlay"></div>
+                  </div>
+
+                  <h1 className="tagline">
+                    <div class="overlay">
+                      Lorem Ipsum is simply dummy text of the printing Lorem
+                      Ipsum is simply
+                    </div>
+                  </h1>
+                </div>
+
+                <img className="abstract" src={abstract} alt=""/>
+              </div>
+              <div class="right">
+                <img src={hero_img_1} alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="swiperslide">
+            <div class="overlay">
+              <div class="left">
+                <div class="content">
+                  <div class="box">
+                    <div class="overlay"></div>
+                  </div>
+
+                  <h1 className="tagline">
+                    <div class="overlay">
+                      Lorem Ipsum is simply dummy text of the printing Lorem
+                      Ipsum is simply
+                    </div>
+                  </h1>
+                </div>
+
+                <img className="abstract" src={abstract} alt=""/>
+              </div>
+              <div class="right">
+                <img src={hero_img_1} alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide className="swiperslide">
             <div class="overlay">
               <div class="left">
