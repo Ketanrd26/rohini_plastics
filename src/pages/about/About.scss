@@ -330,22 +330,22 @@
        
         
         &:nth-child(2){
-          animation-delay: 0.8s;
+          animation-delay: 1.5s;
         }
         &:nth-child(3){
-          animation-delay: 1.3s;
+          animation-delay: 2.5s;
         }
         &:nth-child(4){
-          animation-delay: 2.2s;
+          animation-delay: 3.8s;
         }
         &:nth-child(5){
-          animation-delay: 3.4s;
+          animation-delay: 5.3s;
         }
         &:nth-child(6){
-          animation-delay: 4.7s;
+          animation-delay: 6.9s;
         }
         &:nth-child(7){
-          animation-delay: 5.6s;
+          animation-delay: 8.2s;
         }
       
 
@@ -357,6 +357,28 @@
            left: -13%;
           }
         }
+      }
+
+
+      &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 20px;
+       background: linear-gradient(to left,white,transparent) ;
+       z-index: 99;
+      }
+      &::after{
+        height: 100%;
+        width: 20px;
+        background: linear-gradient(to left, transparent, white);
+
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
       }
     }
  
@@ -437,13 +459,13 @@
 }
 
 @media only screen and (max-width: 670px) {
-  .our_clients {
-    .our_cleints_cont {
-      .clients {
-        .cleint {
-          h1 {
-            font-size: calc(var(--unit));
-          }
+  .clients_parent {
+    .client_cont{
+      .client_list{
+  gap: 30px;
+        .client_logo{
+height: 30px;
+         
         }
       }
     }
@@ -559,26 +581,41 @@
     }
   }
 
-  .our_clients {
-    .our_cleints_cont {
-      .top_heading {
-        .sub_text {
-          width: 100%;
-          text-align: center;
+ .clients_parent {
+
+  .client_cont{
+
+    .client_list{
+gap: 0px !important;
+height: 50px;
+      .client_logo{
+        height: 20px;
+
+        &:nth-child(1){
+          animation-delay: 2s !important;
         }
-      }
-
-      .clients {
-        flex-direction: column !important;
-
-        .cleint {
-          width: 100%;
-
-          h1 {
-            font-size: calc(var(--unit) * 3);
-          }
+        &:nth-child(2){
+          animation-delay: 3.2s !important;
         }
+        &:nth-child(3){
+          animation-delay: 4s !important;
+        }
+        &:nth-child(4){
+          animation-delay: 5.3s !important;
+        }
+        &:nth-child(5){
+          animation-delay: 7s !important;
+        }
+        &:nth-child(6){
+          animation-delay: 8.7s !important;
+        }
+        &:nth-child(7){
+          animation-delay: 10.2s !important;
+        }
+      
+        
       }
     }
   }
+ }
 }

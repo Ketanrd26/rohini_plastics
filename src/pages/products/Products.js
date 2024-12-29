@@ -9,24 +9,34 @@ const Products = () => {
 
   const productItems = [
     {
-      title: "lorem lipsum",
-      desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+      title: "Sun Visor Clamp",
+      desc: " Durable sun visor clamps, perfect for securing visors in vehicles with ease.",
       image: product_item,
     },
     {
-      title: "lorem lipsum",
+      title: "Fender Clips",
       image: product_item,
-      desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+      desc: "High-quality fender clips for securely attaching vehicle body parts.",
     },
     {
-      title: "lorem lipsum",
+      title: "Plastic Washers",
       image: product_item,
-      desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+      desc: "Lightweight and sturdy plastic washers for various industrial and home applications.",
     },
     {
-      title: "lorem lipsum",
+      title: "Pull Pin",
       image: product_item,
-      desc: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum",
+      desc: "Reliable pull pins for locking and quick-release mechanisms.",
+    },
+    {
+      title: "Card Mobile Stand",
+      image: product_item,
+      desc: "Compact and portable card mobile stands, ideal for hands-free usage.",
+    },
+    {
+      title: "Diwali Lighting",
+      image: product_item,
+      desc: "Vibrant and decorative Diwali lighting to brighten up your celebrations.",
     },
   ];
 
