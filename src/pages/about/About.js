@@ -6,22 +6,23 @@ import dummy_img from "../../assests/images.jpeg";
 
 import vision_img from "../../assests/vision_img 1.png";
 import mission_img from "../../assests/mission_icon 1.png";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 
-
-// client 
-import prima from "../../assests/clientts/prima.jpg";
-import ansox from "../../assests/clientts/ansox.jpg";
-import astron from "../../assests/clientts/astron.jpg";
+// client
+import prima from "../../assests/clientts/prima.webp";
+import ansox from "../../assests/clientts/ansox.png";
+import astron from "../../assests/clientts/astron.webp";
+import jaguar from "../../assests/clientts/jaguar.jpeg";
+import strapex from "../../assests/clientts/strapex.webp";
+import spica from "../../assests/clientts/Spica-logo.png";
+import netra from "../../assests/clientts/netra.png";
 
 const About = () => {
   const coreValue = [
@@ -30,29 +31,42 @@ const About = () => {
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
-      heading: "Commitment",
+      heading: "innovative",
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
-      heading: "Commitment",
+      heading: "business ethics",
+      para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    },
+    {
+      heading: "grow together",
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
   ];
 
   const clients = [
     {
-      title:"Prima pvt. ltd",
-      image:prima
+      image: prima,
     },
     {
-      title:"Ansox",
-      image:ansox
+      image: ansox,
     },
     {
-      title:"Astron Switch Craft",
-      image:astron
+      image: astron,
     },
-  ]
+    {
+      image: jaguar,
+    },
+    {
+      image: strapex,
+    },
+    {
+      image: spica,
+    },
+    {
+      image: netra,
+    },
+  ];
   return (
     <>
       <PagetoTop
@@ -199,34 +213,16 @@ const About = () => {
         </div>
       </div>
 
-      <div class="our_clients parent">
-        <div class="our_cleints_cont cont">
-          <div class="top_heading">
-            <p className="sub_text">We Are Manufacured</p>
-            <h1 className="sub_heading"> Our Clients </h1>
-          </div>
-          <Swiper
-            slidesPerView={4}
-            centeredSlides={false}
-            spaceBetween={0}
-            grabCursor={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-          {clients.map((item,index)=>(
- <SwiperSlide  className="swiper-slide" >
- <div class="cleint bg-img-cover" style={{backgroundImage:`url(${item.image})`}} >
-   <h1>{item.title}</h1>
- </div>
-</SwiperSlide>
+      <div class="clients_parent parent">
+        <div class="client_cont cont">
+         <h3>
+          Our Clients
+         </h3>
+         <div class="client_list">
+         {clients.map((item, index) => (
+            <img src={item.image} alt="" key={index} class="client_logo" />
           ))}
-             
-            
-          
-          </Swiper>
+         </div>
         </div>
       </div>
 

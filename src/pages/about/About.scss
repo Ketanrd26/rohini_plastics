@@ -293,92 +293,74 @@
   }
 }
 
-.our_clients {
+.clients_parent{
+  width: 100%;
   height: auto;
   padding: 40px 0px;
 
-  .our_cleints_cont {
+  .client_cont{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--unit);
+    gap: calc(var(--unit));
+    flex-direction: column;
 
-    .top_heading {
-      width: 100%;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .sub_text {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: calc(var(--unit) * 2);
-        font-family: "Dancing Script", serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        color: rgb(228, 228, 228);
-        z-index: -1;
-      }
-
-      .sub_heading {
-        color: var(--accent2);
-        font-size: calc(var(--unit) * 2.5);
-      }
+    h3{
+      font-size: calc(var(--unit)*2);
     }
 
-    .mySwiper {
+
+    .client_list{
       width: 100%;
-    height: auto;
+      height: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: var(--unit);
-      padding: 40px 0px;
+      gap: calc(var(--unit)*2);
+      // overflow: hidden;
+      position: relative;
+      background-color: red;
 
-  
-     
+      .client_logo{
+        height: 50px;
+        animation: swipelogo 10s linear infinite;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100%;
+        background-color: yellow;
+        
+        &:nth-child(2){
+          animation-delay: 1s;
+        }
+        &:nth-child(3){
+          animation-delay: 1.5s;
+        }
+        &:nth-child(4){
+          animation-delay: 12s;
+        }
+        &:nth-child(5){
+          animation-delay: 1.8s;
+        }
+        &:nth-child(6){
+          animation-delay: 2.3s;
+        }
+        &:nth-child(7){
+          animation-delay: 2.8s;
+        }
+      
 
-        .swiper-slide {
-          width: 400px !important;
-         height: 500px !important;
-          .cleint {
-            width: 100%;
-            height: 100%;
-            background-image: url("../../assests/founder.jpg");
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-
-            h1 {
-              position: relative;
-              z-index: 2;
-              color: var(--white);
-              padding: 20px 0px;
-            }
-
-            &::after {
-              width: 100%;
-              height: 100%;
-              content: "";
-              background: linear-gradient(
-                to bottom,
-                transparent,
-                var(--accent)
-              );
-              position: absolute;
-              top: 0;
-              left: 0;
-            }
+        @keyframes swipelogo {
+          0%{
+            left: 100%;
+          }
+          100%{
+           left: -13%;
           }
         }
-
+      }
     }
+ 
   }
 }
 
