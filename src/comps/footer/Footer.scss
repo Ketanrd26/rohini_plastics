@@ -156,3 +156,61 @@
     }
   }
 }
+
+
+.social_icons{
+  position: fixed;
+  bottom: 12.5%;
+  right: 0;
+
+  z-index: 99999999;
+
+  &.si2{
+    bottom: 20%;
+  }
+  &.si3{
+    bottom: 5%;
+  }
+
+
+  .icon{
+   width: 50px;
+   height: 50px;
+   background-color: var(--accent2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: calc(var(--unit)/2);
+  cursor: pointer;
+
+
+
+  span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+      font-size: calc(var(--unit) + 5px);
+      color: var(--white);
+    }
+  }
+
+   p{
+    display: none;
+    color: var(--white);
+
+   }
+
+   &:hover{
+    width: 130px;
+
+
+    p{
+      display: flex;
+    }
+   }
+    
+  }
+
+}

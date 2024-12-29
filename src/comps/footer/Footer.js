@@ -7,6 +7,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
+import { IoCallOutline } from "react-icons/io5";
+import { CiMail } from "react-icons/ci";
 const Footer = () => {
   const navItem = [
     {
@@ -66,6 +68,40 @@ const Footer = () => {
         <div class="image">
           <img src={footer_img} alt="" />
         </div>
+      </div>
+
+      <div class="social_icons">
+        <a class="icon"  target="blank"  href="https://wa.me/+919850176707" >
+          <span>
+            <FaWhatsapp/>
+          </span>
+          <p>
+            Whatsapp 
+          </p>
+        </a>
+   
+      </div>
+      <div class="social_icons si2">
+        <a class="icon"  target="blank"  href="tel:+919850176707"  >
+          <span>
+          <IoCallOutline />
+          </span>
+          <p>
+          Call Now
+          </p>
+        </a>
+   
+      </div>
+      <div class="social_icons si3"   >
+        <a class="icon" target="blank"  href="mailto:rohiniplastic1@gmail.com"  > 
+          <span>
+          <CiMail />
+          </span>
+          <p>
+           Mail Now
+          </p>
+        </a>
+   
       </div>
     </>
   );

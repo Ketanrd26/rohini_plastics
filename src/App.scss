@@ -122,6 +122,7 @@ a {
   border-radius: 25px;
   cursor: pointer;
 overflow-x: hidden;
+border: none;
   
 
   .inner_text{
@@ -134,7 +135,7 @@ overflow-x: hidden;
     font-weight: 500;
     border-radius: 25px;
   
-    transform: translateX(18%);
+    transform: translateX(15%);
     display: flex;
     justify-content: center;
     align-items: center;

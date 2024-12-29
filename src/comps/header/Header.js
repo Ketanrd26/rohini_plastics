@@ -43,7 +43,7 @@ const Header = () => {
           </Link>
 
           <div class="contact_info">
-            <div class="location">
+            <a class="location"  target="blank"   href="mailto:rohiniplastic1@gmail.com">
               <div class="icon">
                 <MdOutlineAlternateEmail />
               </div>
@@ -51,8 +51,8 @@ const Header = () => {
                 <h4>Mail Us</h4>
                 <p>rohiniplastic1@gmail.com</p>
               </div>
-            </div>
-            <div class="location">
+            </a>
+            <a class="location"  target="blank"  href="tel:+919850176707" >
               <div class="icon">
                 <IoCall />
               </div>
@@ -60,7 +60,7 @@ const Header = () => {
                 <h4>Contact Us</h4>
                 <p>+919850176707</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="header-right">
@@ -73,7 +73,7 @@ const Header = () => {
                 </Link>
               ))}
 
-              <Link class="btn" to="/contact">
+              <Link class="btn" to="/contact-us">
                 <div class="inner_text">Contact us</div>
               </Link>
             </div>

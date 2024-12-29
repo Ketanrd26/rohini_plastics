@@ -8,6 +8,7 @@ import Pagetotop from './comps/pagetotop/Pagetotop';
 import About from './pages/about/About';
 import Products from './pages/products/Products';
 import Service from './pages/services/Service';
+import Contact from './pages/contact/Contact';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path='/about'   element={<About/>} />
       <Route path='/products'   element={<Products/>} />
       <Route path='/services'   element={<Service/>} />
+      <Route path='/contact-us'   element={<Contact/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

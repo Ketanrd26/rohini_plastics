@@ -1,0 +1,75 @@
+.contact_parent {
+  width: 100%;
+  padding: 40px 0px;
+
+  .contact_cont {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+   gap: var(--unit);
+    .left {
+      width: 50%;
+      height: auto;
+      background-image: url("../../assests/about_2.jpg");
+      border-radius: calc(var(--unit)/2);
+    }
+
+    .right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: var(--unit);
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--unit);
+
+        input {
+          width: 100%;
+          height: 50px;
+          border-radius: calc(var(--unit)/2);
+          outline: none;
+          border: 1px solid rgba(200, 200, 200, 0.877);
+          padding: 10px;
+        }
+
+        textarea {
+          width: 100%;
+          height: 100px;
+          border-radius: calc(var(--unit)/2);
+          outline: none;
+          border: 1px solid rgba(200, 200, 200, 0.877);
+          padding: 10px;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:900px) {
+    
+    .contact_parent{
+
+
+        .contact_cont{
+            flex-direction: column !important;
+
+            .left{
+                width: 100%;
+            }
+
+            .right{
+                width: 100%;
+            }
+        }
+    }
+}

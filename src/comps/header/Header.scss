@@ -51,6 +51,7 @@
         align-items: center;
         gap: calc(var(--unit) / 2);
         height: 100%;
+        cursor: pointer;
 
         .icon {
           display: flex;
@@ -59,6 +60,7 @@
 
           svg {
             font-size: calc(var(--unit) * 2);
+            color: var(--accent2);
           }
         }
 
