@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import PagetoTop from "../../comps/pagetop/PagetoTop";
 import "./Products.scss";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import product_item from "../../assests/product_item/item.png";
+import sun_clamp from "../../assests/product_item/sun_visor_clamp.jpg";
+import fender_clips from "../../assests/product_item/fender_clips.jpg";
+import plastic_wash from "../../assests/product_item/plastic_washers.jpg";
+import pull_pin from "../../assests/product_item/pull_pin.jpg";
+import card_stand from "../../assests/product_item/mb_stand.jpeg";
+import diwali_light from "../../assests/product_item/diwali_ligjitng.jpeg";
 
 const Products = () => {
   const [activeindex, setActiveindex] = useState(null);
@@ -11,31 +16,31 @@ const Products = () => {
     {
       title: "Sun Visor Clamp",
       desc: " Durable sun visor clamps, perfect for securing visors in vehicles with ease.",
-      image: product_item,
+      image: sun_clamp,
     },
     {
       title: "Fender Clips",
-      image: product_item,
+      image: fender_clips,
       desc: "High-quality fender clips for securely attaching vehicle body parts.",
     },
     {
       title: "Plastic Washers",
-      image: product_item,
+      image: plastic_wash,
       desc: "Lightweight and sturdy plastic washers for various industrial and home applications.",
     },
     {
       title: "Pull Pin",
-      image: product_item,
+      image: pull_pin,
       desc: "Reliable pull pins for locking and quick-release mechanisms.",
     },
     {
       title: "Card Mobile Stand",
-      image: product_item,
+      image: card_stand,
       desc: "Compact and portable card mobile stands, ideal for hands-free usage.",
     },
     {
-      title: "Diwali Lighting",
-      image: product_item,
+      title: "Festival Lighting",
+      image: diwali_light,
       desc: "Vibrant and decorative Diwali lighting to brighten up your celebrations.",
     },
   ];
@@ -56,7 +61,7 @@ const Products = () => {
           <div class="products_list">
             {productItems.map((item, index) => (
               <>
-                {!(index === 0 && activeindex === productItems.length - 1) && (
+               
                   <div
                     className="box box1 bg-img-contain"
                     style={{ backgroundImage: `url(${item.image})` }}
@@ -73,7 +78,7 @@ const Products = () => {
                       </div>
                     </div>
                   </div>
-                )}
+             
 
                 <div
                   class={activeindex === index ? "box2 box active" : "box2 box"}
