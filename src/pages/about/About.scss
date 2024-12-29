@@ -316,10 +316,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: calc(var(--unit)*2);
-      // overflow: hidden;
+      // gap: calc(var(--unit)*2);
+      overflow: hidden;
       position: relative;
-      background-color: red;
 
       .client_logo{
         height: 50px;
@@ -328,25 +327,25 @@
         top: 50%;
         transform: translateY(-50%);
         left: 100%;
-        background-color: yellow;
+       
         
         &:nth-child(2){
-          animation-delay: 1s;
+          animation-delay: 0.8s;
         }
         &:nth-child(3){
-          animation-delay: 1.5s;
+          animation-delay: 1.3s;
         }
         &:nth-child(4){
-          animation-delay: 12s;
+          animation-delay: 2.2s;
         }
         &:nth-child(5){
-          animation-delay: 1.8s;
+          animation-delay: 3.4s;
         }
         &:nth-child(6){
-          animation-delay: 2.3s;
+          animation-delay: 4.7s;
         }
         &:nth-child(7){
-          animation-delay: 2.8s;
+          animation-delay: 5.6s;
         }
       
 
