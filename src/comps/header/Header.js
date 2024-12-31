@@ -18,7 +18,7 @@ const Header = () => {
     },
     {
       link_name: "Services",
-      link_path: "/",
+      link_path: "/services",
     },
     {
       link_name: "Our Products",
