@@ -8,7 +8,7 @@ import plastic_wash from "../../assests/product_item/plastic_washers.jpg";
 import pull_pin from "../../assests/product_item/pull_pin.jpg";
 import card_stand from "../../assests/product_item/mb_stand.jpeg";
 import diwali_light from "../../assests/product_item/diwali_ligjitng.jpeg";
-
+import automobile_product from "../../assests/product_item/car_platics_items.jpeg"
 const Products = () => {
   const [activeindex, setActiveindex] = useState(null);
 
@@ -42,6 +42,11 @@ const Products = () => {
       title: "Festival Lighting",
       image: diwali_light,
       desc: "Vibrant and decorative Diwali lighting to brighten up your celebrations.",
+    },
+    {
+      title: "Automobile plastic products",
+      image: automobile_product,
+      desc: "Showcasing durable, high-quality automobile plastic components like trims, bumpers, dashboards, with user-friendly design and specifications.",
     },
   ];
 

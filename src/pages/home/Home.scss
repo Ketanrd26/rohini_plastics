@@ -205,7 +205,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        filter: hue-rotate(54deg);
+        filter: hue-rotate(99deg);
 
        img{
         width: 80%;
@@ -471,9 +471,9 @@
 
       .photo_div {
         left: 10%;
-        top: 50% !important;
-        transform: translateY(-50%);
-        width: 250px;
+      
+        bottom: 35% !important; 
+        width: 250px !important;
         height: 250px;
       }
     }

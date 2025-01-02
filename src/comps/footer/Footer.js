@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   const navItem = [
     {
@@ -55,7 +56,7 @@ const Footer = () => {
             <FaFacebookF />
             </a>
             <a class="icon">
-            <BsTwitterX />
+            <FaInstagram />
             </a>
             <a class="icon">
             <FaWhatsapp />

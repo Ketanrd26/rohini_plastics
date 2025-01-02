@@ -138,58 +138,7 @@
   }
 }
 
-.founder_parent {
-  width: 100%;
-  height: auto;
-  background-color: var(--lightgrey);
-  padding: 40px 0px;
-  position: relative;
 
-  .founder_cont {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: calc(var(--unit) * 3);
-
-    .founder_image {
-      width: 50%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        height: 100%;
-      }
-    }
-
-    .founder_content {
-      width: 50%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: var(--unit);
-
-      .name {
-        color: var(--accent2);
-      }
-    }
-  }
-
-  .image {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-
-    img {
-      height: 100%;
-      opacity: 0.3;
-    }
-  }
-}
 
 .vision_mission_parent {
   width: 100%;
@@ -320,7 +269,7 @@
       position: relative;
 
       .client_logo {
-        height: 50px;
+        height: 80px;
         animation: swipelogo 10s linear infinite;
         position: absolute;
         top: 50%;
@@ -328,23 +277,23 @@
         left: 100%;
 
         &:nth-child(2) {
-          animation-delay: 1.5s;
+          animation-delay: 2.8s;
         }
         &:nth-child(3) {
-          animation-delay: 2.5s;
+          animation-delay: 5s;
         }
         &:nth-child(4) {
-          animation-delay: 3.8s;
+          animation-delay: 17s;
         }
-        &:nth-child(5) {
-          animation-delay: 5.3s;
-        }
-        &:nth-child(6) {
-          animation-delay: 6.9s;
-        }
-        &:nth-child(7) {
-          animation-delay: 8.2s;
-        }
+        // &:nth-child(5) {
+        //   animation-delay: 5s;
+        // }
+        // &:nth-child(6) {
+        //   animation-delay: 8s;
+        // }
+        // &:nth-child(7) {
+        //   animation-delay: 12s;
+        // }
 
         @keyframes swipelogo {
           0% {
@@ -413,7 +362,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          filter: hue-rotate(54deg);
+          filter: hue-rotate(99deg);
+
 
 
           img{
@@ -468,7 +418,7 @@
       .client_list {
         gap: 30px;
         .client_logo {
-          height: 30px;
+          height: 50px;
         }
       }
     }
@@ -590,19 +540,19 @@
         gap: 0px !important;
         height: 50px;
         .client_logo {
-          height: 20px;
+          height: 30px;
 
-          &:nth-child(1) {
-            animation-delay: 2s !important;
-          }
+    &:nth-child(1){
+      animation-delay: 0.8s !important;
+    }
           &:nth-child(2) {
             animation-delay: 3.2s !important;
           }
           &:nth-child(3) {
-            animation-delay: 4s !important;
+            animation-delay: 6s !important;
           }
           &:nth-child(4) {
-            animation-delay: 5.3s !important;
+            animation-delay: 8s !important;
           }
           &:nth-child(5) {
             animation-delay: 7s !important;

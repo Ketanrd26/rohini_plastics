@@ -102,6 +102,25 @@
       background-color: var(--accent2);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
       padding: 0px var(--unit);
+
+      .list{
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        align-items: center;
+        gap: 20px;
+
+        padding-left:80px ;
+
+
+        a{
+          svg{
+            font-size: 20px;
+
+            color: var(--white);
+          }
+        }
+      }
     }
 
     .bottom_section {

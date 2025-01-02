@@ -6,7 +6,7 @@ import pd from "../../assests/icons/product.webp";
 import assembly from "../../assests/icons/assembly.webp";
 
 
-import service1_image from "../../assests/molding_service.jpg"
+import service1_image from "../../assests/molding_service.jpeg"
 import service2_image from "../../assests/product_design.webp"
 import service3_image from "../../assests/assembly.webp"
 

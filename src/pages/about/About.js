@@ -4,8 +4,8 @@ import abstract_image from "../../assests/abstract.png";
 import "./About.scss";
 import dummy_img from "../../assests/images.jpeg";
 
-import vision_img from "../../assests/vision_img 1.png";
-import mission_img from "../../assests/mission_icon 1.png";
+import vision_img from "../../assests/vision_img 1.webp";
+import mission_img from "../../assests/mission_icon 1.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -122,13 +122,7 @@ const About = () => {
                 </ul>
               </div>
 
-              <div class="right_panel">
-                <h3>
-                  Total area of <br />
-                  company
-                </h3>
-                <h5>1500 sq.ft.</h5>
-              </div>
+         
             </div>
           </div>
 
@@ -142,31 +136,7 @@ const About = () => {
         </div>
       </div>
 
-      <div class="founder_parent parent">
-        <div class="founder_cont cont">
-          <div class="founder_image">
-            <img src={dummy_img} alt="" />
-          </div>
-          <div class="founder_content">
-            <h2 class="name">Mr. Dattatray N. Labade</h2>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' 
-            </p>
-            <div class="btn">
-              <div class="inner_text">Contact us</div>
-            </div>
-          </div>
-        </div>
-        <div class="image">
-          <img src={abstract_image} alt="" />
-        </div>
-      </div>
+ 
 
       <div class="vision_mission_parent parent">
         <div class="vision">
@@ -231,7 +201,12 @@ const About = () => {
           Our Clients
          </h3>
          <div class="client_list">
-         {clients.map((item, index) => (
+         {clients.slice(0,3).map((item, index) => (
+            <img src={item.image} alt="" key={index} class="client_logo" />
+          ))}
+         </div>
+         <div class="client_list ">
+         {clients.slice(3,7).map((item, index) => (
             <img src={item.image} alt="" key={index} class="client_logo" />
           ))}
          </div>

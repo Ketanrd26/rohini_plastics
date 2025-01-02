@@ -1,7 +1,8 @@
 import React from "react";
 import "./PagetoTop.scss";
 import { Link } from "react-router-dom";
-import pagetopimg from "../../assests/page_topimg.png"
+// import pagetopimg from "../../assests/page_topimg.png"
+import pagetopimg from "../../assests/footer_img.png"
 const PagetoTop = (props) => {
   return (
     <>
