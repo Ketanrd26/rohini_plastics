@@ -33,7 +33,7 @@
       .div2 {
         position: absolute;
         left: 35%;
-        background-image: url("../../assests/about_img_first.webp");
+        background-image: url("../../assests/about_img_first.jpeg");
         width: 40%;
         aspect-ratio: 1;
         z-index: 1;
@@ -131,12 +131,16 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: flex-start;
+          align-items: center;
           gap: calc(var(--unit) / 2);
 
           h3{
             text-align: center;
             // font-size: 16px;
+          }
+
+          p{
+            text-align: center;
           }
         }
       }

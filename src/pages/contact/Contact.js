@@ -62,10 +62,10 @@ const Contact = () => {
             </div>
 
             <form action=""   onSubmit={(e) => Submit(e)} >
-              <input type="text" name="Name" placeholder="Name" />
-              <input type="text" name="Organization_name" placeholder="Organization Name" />
+              <input type="text" name="Name" placeholder="Name*" required />
               <input type="text" name="Contact_number" placeholder="Contact Number*" required />
-              <input type="text" name="Email_id" placeholder="Email Id*" required />
+              <input type="text" name="Organization_name" placeholder="Organization Name" />
+              <input type="text" name="Email_id" placeholder="Email Id"  />
               <textarea type="text" name="Message" placeholder="Message" />
               <button className="btn" type="submit" >
                <span class="inner_text">

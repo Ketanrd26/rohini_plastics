@@ -114,16 +114,7 @@ const About = () => {
               rate and new production technology.
             </p>
 
-            <div class="bottom">
-              <div class="left_list">
-                <ul>
-                  <li>Conversion of cash into raw material.</li>
-                  <li>Conversion of cash into raw material.</li>
-                </ul>
-              </div>
-
-         
-            </div>
+        
           </div>
 
           <div class="right">

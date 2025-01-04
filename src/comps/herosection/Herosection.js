@@ -18,7 +18,7 @@ const Herosection = () => {
           spaceBetween={0}
           centeredSlides={true}
           autoplay={{
-            delay: 5000,
+            delay: 8000,
             disableOnInteraction: false,
           }}
           loop
@@ -28,6 +28,29 @@ const Herosection = () => {
           modules={[Autoplay, Pagination]}
           className="mySwiper"
         >
+           <SwiperSlide className="swiperslide">
+            <div class="overlay">
+              <div class="left">
+                <div class="content">
+                  <div class="box">
+                    <div class="overlay"></div>
+                  </div>
+
+                  <h1 className="tagline">
+                    <div class="overlay">
+                      Turning your idea into reality with an expert and
+                      innovative product design
+                    </div>
+                  </h1>
+                </div>
+
+                <img className="abstract" src={abstract} alt="" />
+              </div>
+              <div class="right">
+                <img src={hero_img_1} alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide className="swiperslide">
             <div class="overlay">
               <div class="left">
@@ -74,29 +97,7 @@ const Herosection = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="swiperslide">
-            <div class="overlay">
-              <div class="left">
-                <div class="content">
-                  <div class="box">
-                    <div class="overlay"></div>
-                  </div>
-
-                  <h1 className="tagline">
-                    <div class="overlay">
-                      Turning Your Ideas into Reality with Expert Plastic
-                      Molding Capabilities and Care
-                    </div>
-                  </h1>
-                </div>
-
-                <img className="abstract" src={abstract} alt="" />
-              </div>
-              <div class="right">
-                <img src={hero_img_1} alt="" />
-              </div>
-            </div>
-          </SwiperSlide>
+         
         </Swiper>
       </div>
     </>

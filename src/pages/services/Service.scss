@@ -64,7 +64,7 @@
         &::after {
           width: 100px;
           aspect-ratio: 1;
-          background-color: var(--accent2);
+          background-color: var(--accent);
           position: absolute;
           content: "";
           border-radius: 50%;
@@ -73,7 +73,7 @@
           z-index: 1;
           transition: var(--trans);
           // transform-origin: left top;
-          opacity: 0.5;
+          opacity: 0.8;
         }
 
         &:hover {
@@ -84,7 +84,7 @@
           .right {
             .top {
               h1 {
-                color: var(--white);
+                color: var(--black);
               }
             }
 

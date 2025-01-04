@@ -15,19 +15,20 @@ import service3_image from "../../assests/assembly.webp"
 
 const Service = () => {
   const service_list = [
-    {
-      service_name: "Plastic injection moulding solutions",
-      icon: moldingMchine,
-      content:
-        "Injection moulding is a widely used manufacturing process for producing parts by injecting molten material into a mold cavity under high pressure. It's particularly suited for mass production of complex and precise parts. We manufacture a wide range of products in Injection moulding for the automobile sector & other industries.",
-      image: service1_image,
-    },
+   
     {
       service_name: "Product designing and development",
       icon: pd,
       content:
         "Design and development are two key elements necessary to create any product. From start to finish, each phase of the product's lifecycle needs careful coordination between these two disciplines for a successful outcome. We design the product by using a powerful 3D design software which can convert your imagination to reality.",
       image: service2_image,
+    },
+    {
+      service_name: "Plastic injection moulding solutions",
+      icon: moldingMchine,
+      content:
+        "Injection moulding is a widely used manufacturing process for producing parts by injecting molten material into a mold cavity under high pressure. It's particularly suited for mass production of complex and precise parts. We manufacture a wide range of products in Injection moulding for the automobile sector & other industries.",
+      image: service1_image,
     },
     {
       service_name: "Assembly",
