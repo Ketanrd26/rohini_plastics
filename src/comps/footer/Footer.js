@@ -34,35 +34,41 @@ const Footer = () => {
       <div class="footer_parent parent">
         <div class="footer_cont cont">
           <div class="left">
-            <img src={logo} alt="" />
-            <h1>Rohini <br/> Plastics</h1>
+            <div class="top">
+              <img src={logo} alt="" />
+              <h1>
+                Rohini <br /> Plastics
+              </h1>
+            </div>
+            <div class="bottom">
+              <a href="https://maps.app.goo.gl/kJ3vXRe2QmfiM6p18" target="blank" >
+                Sr.No.17/1, Shri Ganesh Nagar, Sayaji Thakur Marga, Dhawde
+                Wasti, Bhosari, Pune - 39
+              </a>
+            </div>
           </div>
           <div class="middle">
             {navItem.map((item, index) => (
-              <Link>{item.link_name}</Link>
+              <Link key={index} >{item.link_name}</Link>
             ))}
           </div>
 
           <div class="privacy">
-            <Link>
-            Privacy Policy
-            </Link>
-            <Link>
-          Cookies
-            </Link>
+            <Link  to="/privacy" > Privacy Policy</Link>
+            
           </div>
           <div class="social_media_links">
             <a class="icon">
-            <FaFacebookF />
+              <FaFacebookF />
             </a>
             <a class="icon">
-            <FaInstagram />
+              <FaInstagram />
             </a>
             <a class="icon">
-            <FaWhatsapp />
+              <FaWhatsapp />
             </a>
             <a class="icon">
-            <FaGoogle />
+              <FaGoogle />
             </a>
           </div>
         </div>
@@ -72,37 +78,28 @@ const Footer = () => {
       </div>
 
       <div class="social_icons">
-        <a class="icon"  target="blank"  href="https://wa.me/+919850176707" >
+        <a class="icon" target="blank" href="https://wa.me/+919850176707">
           <span>
-            <FaWhatsapp/>
+            <FaWhatsapp />
           </span>
-          <p>
-            Whatsapp 
-          </p>
+          <p>Whatsapp</p>
         </a>
-   
       </div>
       <div class="social_icons si2">
-        <a class="icon"  target="blank"  href="tel:+919850176707"  >
+        <a class="icon" target="blank" href="tel:+919850176707">
           <span>
-          <IoCallOutline />
+            <IoCallOutline />
           </span>
-          <p>
-          Call Now
-          </p>
+          <p>Call Now</p>
         </a>
-   
       </div>
-      <div class="social_icons si3"   >
-        <a class="icon" target="blank"  href="mailto:rohiniplastic1@gmail.com"  > 
+      <div class="social_icons si3">
+        <a class="icon" target="blank" href="mailto:rohiniplastic1@gmail.com">
           <span>
-          <CiMail />
+            <CiMail />
           </span>
-          <p>
-           Mail Now
-          </p>
+          <p>Mail Now</p>
         </a>
-   
       </div>
     </>
   );

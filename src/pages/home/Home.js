@@ -21,6 +21,8 @@ import fm from "../../assests/icons//family.gif";
 import Innovative from "../../assests/icons/Innovative.gif";
 import pb from "../../assests/icons/task.gif";
 import call from "../../assests/icons/24-hours-support.gif";
+import ready_use from "../../assests/icons/ready_to_use.gif";
+import custom_product from "../../assests/icons/custom_product.gif"
 
 const Home = () => {
   useEffect(() => {
@@ -72,25 +74,32 @@ const Home = () => {
           <div class="card_list">
             <div class="card" data-aos="fade-up">
               <div class="left">
-                <div class="icon"></div>
+                <div class="icon">
+                  <img src={custom_product} alt=""/>
+                </div>
               </div>
               <div class="content">
-                <h3>ENGINEERING PLASTICS</h3>
+                <h3>Custom Plastic Product Manufacturing</h3>
                 <p>
-                  We are engaged in development & supply of various types of
-                  plastic engineering parts.
+                  Custom plastic manufacturing: Tailored solutions with
+                  precision, serving diverse industries using advanced
+                  techniques for unmatched quality.
                 </p>
               </div>
             </div>
             <div class="card" data-aos="fade-up">
               <div class="left">
-                <div class="icon"></div>
+                <div class="icon">
+                <img src={ready_use} alt=""/>
+
+                </div>
               </div>
               <div class="content">
-                <h3>ENGINEERING PLASTICS</h3>
+                <h3> Ready-to-Use Plastic <br/> Products</h3>
                 <p>
-                  We are engaged in development & supply of various types of
-                  plastic engineering parts.
+                  Ready-to-use products: Durable, eco-friendly plastic items
+                  designed for various applications, available in stock for
+                  quick delivery.
                 </p>
               </div>
             </div>
@@ -113,7 +122,7 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <img src={fm} alt=""/>
+              <img src={fm} alt="" />
             </div>
           </div>
           <div class="card" data-aos="fade-down" data-aos-easing="ease-in-sine">
@@ -128,8 +137,7 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <img src={Innovative} alt=""/>
-
+              <img src={Innovative} alt="" />
             </div>
           </div>
           <div class="card" data-aos="fade-up" data-aos-easing="ease-in-sine">
@@ -144,8 +152,7 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <img src={pb} alt=""/>
-
+              <img src={pb} alt="" />
             </div>
           </div>
           <div class="card" data-aos="fade-down" data-aos-easing="ease-in-sine">
@@ -160,8 +167,7 @@ const Home = () => {
             </div>
 
             <div class="icon">
-            <img src={call} alt=""/>
-
+              <img src={call} alt="" />
             </div>
           </div>
         </div>
