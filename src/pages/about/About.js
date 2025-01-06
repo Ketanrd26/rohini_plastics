@@ -15,7 +15,6 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
 
-
 // icons
 
 import Commitment from "../../assests/icons/commitment.gif";
@@ -36,22 +35,22 @@ const About = () => {
   const coreValue = [
     {
       heading: "Commitment",
-      icon:Commitment,
+      icon: Commitment,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
       heading: "Innovative",
-      icon:Innovative,
+      icon: Innovative,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
       heading: "Business Ethics",
-      icon:Business_Ethics,
+      icon: Business_Ethics,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
     {
       heading: "Grow Together",
-      icon:Grow_Together,
+      icon: Grow_Together,
       para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     },
   ];
@@ -113,8 +112,6 @@ const About = () => {
               Company’s aims are to start marketing by our own with high growth
               rate and new production technology.
             </p>
-
-        
           </div>
 
           <div class="right">
@@ -127,8 +124,6 @@ const About = () => {
         </div>
       </div>
 
- 
-
       <div class="vision_mission_parent parent">
         <div class="vision">
           <div class="overlay">
@@ -140,20 +135,13 @@ const About = () => {
                 <h1>Mission</h1>
               </div>
               <div class="bottom">
-                <ul>
-                  <li>
-                    To delight our customer in quality, delivery, and cost
-                    through continuous improvement and customer interaction.
-                  </li>
-                  <li>
-                    To delight our customer in quality, delivery, and cost
-                    through continuous improvement and customer interaction.
-                  </li>
-                  <li>
-                    To delight our customer in quality, delivery, and cost
-                    through continuous improvement and customer interaction.
-                  </li>
-                </ul>
+                <p>
+                  Rohini Plastics is an independent company dedicated to
+                  manufacturing a diverse range of high-quality plastic
+                  products. Our mission is to maintain a customer-focused
+                  approach with ongoing improvements in our manufacturing
+                  processes while delivering exceptional quality and service.
+                </p>
               </div>
             </div>
           </div>
@@ -167,20 +155,13 @@ const About = () => {
               <h1>Vision</h1>
             </div>
             <div class="bottom">
-              <ul>
-                <li>
-                  To delight our customer in quality, delivery, and cost through
-                  continuous improvement and customer interaction.
-                </li>
-                <li>
-                  To delight our customer in quality, delivery, and cost through
-                  continuous improvement and customer interaction.
-                </li>
-                <li>
-                  To delight our customer in quality, delivery, and cost through
-                  continuous improvement and customer interaction.
-                </li>
-              </ul>
+              <p>
+                To become a trusted provider of innovative product design and
+                plastic molding solutions. Our goal is to continuously deliver
+                value-driven results with a focus on reliability,
+                sustainability, and excellence, while building strong
+                partnerships with our clients.
+              </p>
             </div>
           </div>
         </div>
@@ -188,19 +169,19 @@ const About = () => {
 
       <div class="clients_parent parent">
         <div class="client_cont cont">
-         <h3>
-          Our Clients
-         </h3>
-         <div class="client_list">
-         {clients.slice(0,3).map((item, index) => (
-            <img src={item.image} alt="" key={index} class="client_logo" />
-          ))}
-         </div>
-         <div class="client_list ">
-         {clients.slice(3,7).map((item, index) => (
-            <img src={item.image} alt="" key={index} class="client_logo" />
-          ))}
-         </div>
+          <h3>Our Clients</h3>
+          <div class="client_list">
+            {clients.slice(0, 4).map((item, index) => (
+            <div class="client_logo">
+                <img src={item.image} alt="" key={index} class="clients_logo" />
+            </div>
+            ))}
+          </div>
+          {/* <div class="client_list ">
+            {clients.slice(3, 7).map((item, index) => (
+              <img src={item.image} alt="" key={index} class="client_logo" />
+            ))}
+          </div> */}
         </div>
       </div>
 
@@ -209,8 +190,8 @@ const About = () => {
           {coreValue.map((item, index) => (
             <div class="content">
               <div class="left">
-                <div class="icon"   >
-                  <img src={item.icon} alt=""/>
+                <div class="icon">
+                  <img src={item.icon} alt="" />
                 </div>
               </div>
 

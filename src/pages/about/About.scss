@@ -138,8 +138,6 @@
   }
 }
 
-
-
 .vision_mission_parent {
   width: 100%;
   display: flex;
@@ -180,18 +178,10 @@
         }
 
         .bottom {
-          ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            gap: var(--unit);
-
-            li {
-              color: var(--white);
-              font-weight: 500;
-              font-size: calc(var(--unit) - 2px);
-            }
+          p {
+            color: var(--white);
+            font-weight: 500;
+            font-size: calc(var(--unit) - 2px);
           }
         }
       }
@@ -222,20 +212,11 @@
           color: var(--white);
         }
       }
-
       .bottom {
-        ul {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          gap: var(--unit);
-
-          li {
-            color: var(--white);
-            font-weight: 500;
-            font-size: calc(var(--unit) - 2px);
-          }
+        p {
+          color: var(--white);
+          font-weight: 500;
+          font-size: calc(var(--unit) - 2px);
         }
       }
     }
@@ -260,47 +241,52 @@
 
     .client_list {
       width: 100%;
-      height: 200px;
+      background-color: red;
+      height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
       // gap: calc(var(--unit)*2);
-      overflow: hidden;
+      // overflow: hidden;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .client_logo {
+        width: 200px;
         height: 80px;
-        animation: swipelogo 10s linear infinite;
         position: absolute;
         top: 50%;
+        right: -16%;
         transform: translateY(-50%);
-        left: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+animation: swipe_log 5s linear infinite;
 
-        &:nth-child(2) {
-          animation-delay: 2.8s;
-        }
-        &:nth-child(3) {
-          animation-delay: 5s;
-        }
-        &:nth-child(4) {
-          animation-delay: 17s;
-        }
-        // &:nth-child(5) {
-        //   animation-delay: 5s;
-        // }
-        // &:nth-child(6) {
-        //   animation-delay: 8s;
-        // }
-        // &:nth-child(7) {
-        //   animation-delay: 12s;
-        // }
+&:nth-child(2){
+  animation-delay: 1.25s;
+}
+&:nth-child(3){
+  animation-delay: 2.5s;
+}
+&:nth-child(4){
+  animation-delay: 3.75s;
+}
 
-        @keyframes swipelogo {
-          0% {
-            left: 100%;
+
+        .clients_logo {
+          height: 100%;
+        }
+
+        @keyframes swipe_log {
+          from {
+            right: -16%;
           }
-          100% {
-            left: -13%;
+          to {
+            right: 100%;
           }
         }
       }
@@ -358,17 +344,14 @@
         .icon {
           width: 25%;
           aspect-ratio: 1;
-        
+
           display: flex;
           justify-content: center;
           align-items: center;
           filter: hue-rotate(99deg);
 
-
-
-          img{
+          img {
             width: 100%;
-           
           }
         }
       }
@@ -542,9 +525,9 @@
         .client_logo {
           height: 30px;
 
-    &:nth-child(1){
-      animation-delay: 0.8s !important;
-    }
+          &:nth-child(1) {
+            animation-delay: 0.8s !important;
+          }
           &:nth-child(2) {
             animation-delay: 3.2s !important;
           }
