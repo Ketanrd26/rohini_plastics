@@ -2,7 +2,9 @@ import React from "react";
 import "./PagetoTop.scss";
 import { Link } from "react-router-dom";
 // import pagetopimg from "../../assests/page_topimg.png"
-import pagetopimg from "../../assests/footer_img.png"
+import pagetopimg from "../../assests/footer_img.png";
+
+import abstract from "../../assests/abstract.png";
 const PagetoTop = (props) => {
   return (
     <>
@@ -36,6 +38,8 @@ const PagetoTop = (props) => {
             </div>
            
           </div>
+
+          <img className="abstract" src={abstract} alt="" />
           <div class="right">
                 <img src={pagetopimg} alt=""/>
             </div>

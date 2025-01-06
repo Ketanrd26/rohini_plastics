@@ -41,17 +41,17 @@ const About = () => {
     {
       heading: "Innovative",
       icon: Innovative,
-      para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      para: "At Rohini Plastics, we strive to stay ahead of the curve by embracing cutting-edge technology and creative thinking. Our innovative approach enables us to design and manufacture solutions that meet the unique needs of our clients, ensuring efficiency, functionality, and sustainability. Whether it's custom product development or enhancing existing processes, we are committed to pushing boundaries and achieving excellence.",
     },
     {
       heading: "Business Ethics",
       icon: Business_Ethics,
-      para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      para: "Integrity is the foundation of our success. We operate with honesty, accountability, and transparency, ensuring that every decision we make aligns with our ethical standards. From sourcing materials responsibly to maintaining fair practices with clients and employees, we uphold trust and respect in every interaction. Our commitment to ethical business practices fosters a culture of reliability and long-term partnerships.",
     },
     {
       heading: "Grow Together",
       icon: Grow_Together,
-      para: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+      para: "Collaboration is at the heart of our business. We believe that true success is a collective effort, achieved when all stakeholders—clients, employees, and partners—work together. At Rohini Plastics, we prioritize building relationships that encourage shared growth, mutual learning, and innovation. By empowering our team and supporting our clients, we aim to create a thriving ecosystem where everyone succeeds.",
     },
   ];
 
@@ -177,11 +177,14 @@ const About = () => {
             </div>
             ))}
           </div>
-          {/* <div class="client_list ">
-            {clients.slice(3, 7).map((item, index) => (
-              <img src={item.image} alt="" key={index} class="client_logo" />
+          <div class="client_list">
+            {clients.slice(3, 8).map((item, index) => (
+            <div class="client_logo">
+                <img src={item.image} alt="" key={index} class="clients_logo" />
+            </div>
             ))}
-          </div> */}
+          </div>
+         
         </div>
       </div>
 

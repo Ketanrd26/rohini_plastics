@@ -22,7 +22,7 @@ import Innovative from "../../assests/icons/Innovative.gif";
 import pb from "../../assests/icons/task.gif";
 import call from "../../assests/icons/24-hours-support.gif";
 import ready_use from "../../assests/icons/ready_to_use.gif";
-import custom_product from "../../assests/icons/custom_product.gif"
+import custom_product from "../../assests/icons/custom_product.gif";
 
 const Home = () => {
   useEffect(() => {
@@ -46,16 +46,14 @@ const Home = () => {
           </div>
 
           <div class="right" data-aos="fade-down">
-            <h3>It is a long established fact fact</h3>
+            <h3>About Rohini Plastics</h3>
 
             <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search 
+              The company has embarked on a modernization program to that end it
+              has chosen to go for quality management system as per AN ISO
+              9001:2015 in its organization. Company’s aims are to start
+              marketing by our own with high growth rate and new production
+              technology.
             </p>
 
             <Link class="btn" to="/about">
@@ -75,31 +73,33 @@ const Home = () => {
             <div class="card" data-aos="fade-up">
               <div class="left">
                 <div class="icon">
-                  <img src={custom_product} alt=""/>
+                  <img src={custom_product} alt="" />
                 </div>
               </div>
               <div class="content">
-                <h3>Custom Plastic Product Manufacturing</h3>
+                <h3>
+                  Innovative product design <br /> solution
+                </h3>
                 <p>
-                  Custom plastic manufacturing: Tailored solutions with
-                  precision, serving diverse industries using advanced
-                  techniques for unmatched quality.
+                  Creating advanced, functional designs using cutting-edge
+                  technology to meet diverse industry needs.
                 </p>
               </div>
             </div>
             <div class="card" data-aos="fade-up">
               <div class="left">
                 <div class="icon">
-                <img src={ready_use} alt=""/>
-
+                  <img src={ready_use} alt="" />
                 </div>
               </div>
               <div class="content">
-                <h3> Ready-to-Use Plastic <br/> Products</h3>
+                <h3>
+                  {" "}
+                  Precision plastic product <br /> manufacturing
+                </h3>
                 <p>
-                  Ready-to-use products: Durable, eco-friendly plastic items
-                  designed for various applications, available in stock for
-                  quick delivery.
+                  Producing high-quality, durable plastic products with
+                  state-of-the-art machinery and meticulous attention to detail.
                 </p>
               </div>
             </div>
