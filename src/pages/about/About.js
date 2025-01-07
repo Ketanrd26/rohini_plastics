@@ -96,7 +96,7 @@ const About = () => {
               <h1 className="sub_heading">About Us</h1>
             </div>
             <p>
-              The company started its operations in 1998 under the name and
+              The company started its operations in 2004   under the name and
               style of "Rohini Plastic Products" and subsequently because of its
               quality and performance it was recognized in the field of
               manufacturing plastic products. At present we are manufacturing
@@ -105,8 +105,10 @@ const About = () => {
             </p>
             <p>
               The company has embarked on a modernization program to that end it
-              has chosen to go for quality management system as per AN ISO
-              9001:2015 in its organization.
+              has chosen to go for quality management system as per AN <strong style={{color:`var(--accent)`}} >
+              ISO
+              9001:2015
+                </strong> in its organization.
             </p>
             <p>
               Company’s aims are to start marketing by our own with high growth

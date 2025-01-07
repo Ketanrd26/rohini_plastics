@@ -2,11 +2,9 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Herosection from "../../comps/herosection/Herosection";
 import "./Home.scss";
-import { BsArrowDown } from "react-icons/bs";
-import { FaHeart } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import dummy_image from "../../assests/images.jpeg";
-import { FaStar } from "react-icons/fa";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 // Import Swiper styles
@@ -14,7 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { FreeMode, Pagination } from "swiper/modules";
 
 // icons
 import fm from "../../assests/icons//family.gif";
@@ -24,11 +22,43 @@ import call from "../../assests/icons/24-hours-support.gif";
 import ready_use from "../../assests/icons/ready_to_use.gif";
 import custom_product from "../../assests/icons/custom_product.gif";
 
+import research from "../../assests/icons/investigation.gif";
+import concept from "../../assests/icons/concept.gif";
+import product_dev from "../../assests/icons/business-development.gif";
+import tooling from "../../assests/icons/mold.gif";
+import assembly from "../../assests/icons/assembly-line.gif";
+
+
+
+
 const Home = () => {
   useEffect(() => {
     // Initialize AOS
     AOS.init();
   }, []);
+
+  const worlflow = [
+    {
+      icon: research,
+      title: "Research and Analysis",
+    },
+    {
+      icon: concept,
+      title: "Ideation and Concepts",
+    },
+    {
+      icon: product_dev,
+      title: "Product Development",
+    },
+    {
+      icon: tooling,
+      title: "Tooling and Mould Making",
+    },
+    {
+      icon: assembly,
+      title: "Production and Assembly",
+    },
+  ];
   return (
     <>
       {/*  herosection */}
@@ -203,7 +233,7 @@ const Home = () => {
 
       {/* testiomneal */}
 
-      <div class="testimoneal-parent parent">
+      {/* <div class="testimoneal-parent parent">
         <div class="left">
           <h3>25</h3>
           <p>Years Of Experience</p>
@@ -249,6 +279,67 @@ const Home = () => {
           </div>
           <div className="custom-next">
             <BsArrowDown />
+          </div>
+        </div>
+      </div> */}
+
+      <div class="how_it_works parent">
+        <div class="how_its_work_cont cont">
+          <h2>How it Works</h2>
+
+          <div class="list">
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+
+
+              breakpoints={{
+                350:{
+                  slidesPerView: 1,
+                  spaceBetween: 50,
+                },
+                450:{
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {worlflow.map((item, index) => (
+                 <SwiperSlide className="swiper_slide">
+                 <div class="card" key={index}>
+                   <div class="top">
+                     <img src={item.icon} alt="" />
+                   </div>
+                   <div class="bottom">
+                     <h3>{item.title}</h3>
+                   </div>
+                 </div>
+
+                 <div class="icon">
+                   <span>
+                     <FaArrowRight />
+                   </span>
+                 </div>
+               </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>
