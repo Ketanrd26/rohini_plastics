@@ -40,9 +40,9 @@ const Home = () => {
       <div class="mini-about-parent parent">
         <div class="mini-about-cont cont">
           <div class="left" data-aos="fade-up">
-            <div class="div"></div>
-            <div class="div2 bg-img-cover"></div>
-            <div class="div3 bg-img-cover"></div>
+            <div class="div bg-img-cover"></div>
+            {/* <div class="div2 bg-img-cover"></div>
+            <div class="div3 bg-img-cover"></div> */}
           </div>
 
           <div class="right" data-aos="fade-down">

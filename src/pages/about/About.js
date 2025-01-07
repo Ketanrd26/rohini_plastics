@@ -23,7 +23,7 @@ import Business_Ethics from "../../assests/icons/Business_Ethics.gif";
 import Grow_Together from "../../assests/icons/Grow_Together.gif";
 
 // client
-import prima from "../../assests/clientts/prima.webp";
+import prima from "../../assests/clientts/prima_logo.png";
 import ansox from "../../assests/clientts/ansox.png";
 import astron from "../../assests/clientts/astron.webp";
 import jaguar from "../../assests/clientts/jaguar.jpeg";

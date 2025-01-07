@@ -5,7 +5,9 @@ import "./Herosection.scss";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import hero_img_1 from "../../assests/hero_img_1.webp";
+import hero_img_1 from "../../assests/hero_img_1.png";
+import hero_img_2 from "../../assests/image2.png";
+import hero_img_3 from "../../assests/image_1.png";
 import abstract from "../../assests/abstract.png";
 
 // import required modules
@@ -70,7 +72,7 @@ const Herosection = () => {
                 <img className="abstract" src={abstract} alt="" />
               </div>
               <div class="right">
-                <img src={hero_img_1} alt="" />
+                <img src={hero_img_2} alt="" />
               </div>
             </div>
           </SwiperSlide>
@@ -93,7 +95,7 @@ const Herosection = () => {
                 <img className="abstract" src={abstract} alt="" />
               </div>
               <div class="right">
-                <img src={hero_img_1} alt="" />
+                <img src={hero_img_3} alt="" />
               </div>
             </div>
           </SwiperSlide>

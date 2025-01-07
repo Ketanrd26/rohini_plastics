@@ -18,41 +18,38 @@
       justify-content: center;
 
       .div {
-        background-color: var(--accent);
-        width: 40%;
-        aspect-ratio: 1;
-        position: absolute;
-        left: 30%;
-        border-radius: calc(var(--unit) / 2);
-        transform: translateX(-50%);
-        top: 60%;
-        transform: translateY(-50%);
-        box-shadow: var(--shadow);
-      }
-
-      .div2 {
-        position: absolute;
-        left: 35%;
         background-image: url("../../assests/about_img_first.jpeg");
-        width: 40%;
+        width: 80%;
         aspect-ratio: 1;
-        z-index: 1;
-        top: 0;
-        box-shadow: var(--shadow);
+       
         border-radius: calc(var(--unit) / 2);
+       
+        box-shadow: var(--shadow);
       }
 
-      .div3 {
-        position: absolute;
-        left: 60%;
-        top: 50%;
-        background-image: url("../../assests/about_img_second.webp");
-        width: 30%;
-        aspect-ratio: 1;
-        z-index: 1;
-        box-shadow: var(--shadow);
-        border-radius: calc(var(--unit) / 2);
-      }
+      // .div2 {
+      //   position: absolute;
+      //   left: 35%;
+      //   background-image: url("../../assests/about_img_first.jpeg");
+      //   width: 40%;
+      //   aspect-ratio: 1;
+      //   z-index: 1;
+      //   top: 0;
+      //   box-shadow: var(--shadow);
+      //   border-radius: calc(var(--unit) / 2);
+      // }
+
+      // .div3 {
+      //   position: absolute;
+      //   left: 60%;
+      //   top: 50%;
+      //   background-image: url("../../assests/about_img_second.webp");
+      //   width: 30%;
+      //   aspect-ratio: 1;
+      //   z-index: 1;
+      //   box-shadow: var(--shadow);
+      //   border-radius: calc(var(--unit) / 2);
+      // }
     }
 
     .right {
