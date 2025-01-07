@@ -4,7 +4,7 @@ import Herosection from "../../comps/herosection/Herosection";
 import "./Home.scss";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // Import Swiper styles
@@ -27,9 +27,6 @@ import concept from "../../assests/icons/concept.gif";
 import product_dev from "../../assests/icons/business-development.gif";
 import tooling from "../../assests/icons/mold.gif";
 import assembly from "../../assests/icons/assembly-line.gif";
-
-
-
 
 const Home = () => {
   useEffect(() => {
@@ -61,6 +58,19 @@ const Home = () => {
   ];
   return (
     <>
+      <Helmet>
+        <title>Rohini Plastics - plastic manufacturers near me</title>
+        <meta
+          name="description"
+          content="Rohini Plastics - Trusted plastic manufacturers near you. Specializing in high-quality plastic molding products for diverse industries. Explore our range of reliable and durable plastic solutions."
+        />
+
+        <meta
+          name="keywords"
+          content="plastic manufacturing, plastic manufacturers near me,plastic injection molding companies,plastic company near me"
+        />
+        <link rel="canonical" href="https://rohini-plastics.vercel.app" />
+      </Helmet>
       {/*  herosection */}
 
       <Herosection />
@@ -294,14 +304,12 @@ const Home = () => {
               pagination={{
                 clickable: true,
               }}
-
-
               breakpoints={{
-                350:{
+                350: {
                   slidesPerView: 1,
                   spaceBetween: 50,
                 },
-                450:{
+                450: {
                   slidesPerView: 2,
                   spaceBetween: 50,
                 },
@@ -322,22 +330,22 @@ const Home = () => {
               className="mySwiper"
             >
               {worlflow.map((item, index) => (
-                 <SwiperSlide className="swiper_slide">
-                 <div class="card" key={index}>
-                   <div class="top">
-                     <img src={item.icon} alt="" />
-                   </div>
-                   <div class="bottom">
-                     <h3>{item.title}</h3>
-                   </div>
-                 </div>
+                <SwiperSlide className="swiper_slide">
+                  <div class="card" key={index}>
+                    <div class="top">
+                      <img src={item.icon} alt="" />
+                    </div>
+                    <div class="bottom">
+                      <h3>{item.title}</h3>
+                    </div>
+                  </div>
 
-                 <div class="icon">
-                   <span>
-                     <FaArrowRight />
-                   </span>
-                 </div>
-               </SwiperSlide>
+                  <div class="icon">
+                    <span>
+                      <FaArrowRight />
+                    </span>
+                  </div>
+                </SwiperSlide>
               ))}
             </Swiper>
           </div>

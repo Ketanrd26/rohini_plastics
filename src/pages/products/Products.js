@@ -8,7 +8,8 @@ import plastic_wash from "../../assests/product_item/plastic_washers.jpg";
 import pull_pin from "../../assests/product_item/pull_pin.jpg";
 import card_stand from "../../assests/product_item/mb_stand.jpeg";
 import diwali_light from "../../assests/product_item/diwali_ligjitng.jpeg";
-import automobile_product from "../../assests/product_item/car_platics_items.jpeg"
+import automobile_product from "../../assests/product_item/car_platics_items.jpeg";
+import { Helmet } from "react-helmet";
 const Products = () => {
   const [activeindex, setActiveindex] = useState(null);
 
@@ -52,6 +53,24 @@ const Products = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Our Products | Rohini Plastics - Plastic Moulding Experts</title>
+        <meta
+          name="description"
+          content="Explore the wide range of high-quality plastic products by Rohini Plastics. From custom plastic molding to durable industrial solutions, we cater to diverse industry needs with precision and reliability."
+        />
+
+        <meta
+          name="keywords"
+          content="plastic products,injection moulding, Rohini Plastics,injection plastic molding machine, custom plastic molding, industrial plastic solutions,injection moldable plastics, durable plastic materials, high-quality plastic products, plastic manufacturing experts, plastic product range, plastic moulding solutions"
+        />
+
+        <link
+          rel="canonical"
+          href="https://rohini-plastics.vercel.app/products"
+        />
+      </Helmet>
+
       <PagetoTop
         pageTop_title="Our Products"
         first_link_name="Home"
@@ -66,31 +85,27 @@ const Products = () => {
           <div class="products_list">
             {productItems.map((item, index) => (
               <>
-               
-                  <div
-                    className="box box1 bg-img-contain"
-                    style={{ backgroundImage: `url(${item.image})` }}
-                  >
-                    <div class="overlay">
-                      <h3>{item.title}</h3>
-                      <div
-                        class={activeindex === index ? "icon active" : "icon"}
-                        onClick={() =>
-                          setActiveindex(activeindex === index ? null : index)
-                        }
-                      >
-                        <MdOutlineKeyboardArrowRight />
-                      </div>
+                <div
+                  className="box box1 bg-img-contain"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                >
+                  <div class="overlay">
+                    <h3>{item.title}</h3>
+                    <div
+                      class={activeindex === index ? "icon active" : "icon"}
+                      onClick={() =>
+                        setActiveindex(activeindex === index ? null : index)
+                      }
+                    >
+                      <MdOutlineKeyboardArrowRight />
                     </div>
                   </div>
-             
+                </div>
 
                 <div
                   class={activeindex === index ? "box2 box active" : "box2 box"}
                 >
-                  <p>
-                  {activeindex === index && item.desc}
-                  </p>
+                  <p>{activeindex === index && item.desc}</p>
                 </div>
               </>
             ))}

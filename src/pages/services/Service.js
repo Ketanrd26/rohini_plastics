@@ -9,6 +9,7 @@ import assembly from "../../assests/icons/assembly.webp";
 import service1_image from "../../assests/molding_service.jpeg"
 import service2_image from "../../assests/product_design.webp"
 import service3_image from "../../assests/assembly.webp"
+import { Helmet } from "react-helmet";
 
 
 
@@ -40,6 +41,22 @@ const Service = () => {
   ];
   return (
     <>
+    <Helmet>
+        <title>Our Products | injection molding machine manufacturers</title>
+        <meta
+          name="description"
+          content="Discover the exceptional services offered by Rohini Plastics, including custom plastic molding, product design, prototyping, and large-scale manufacturing. Delivering reliable solutions for all your plastic needs."
+        />
+        <meta
+          name="keywords"
+          content="injection moldable plastics,injection moulding,injection plastic molding machine,pvc mould,plastic injection moulding,plastic injection molding companies, Rohini Plastics,injection plastic molding machine, custom plastic molding, industrial plastic solutions,injection moldable plastics, durable plastic materials, high-quality plastic products, plastic manufacturing experts, plastic product range, plastic moulding solutions"
+        />
+
+<link
+          rel="canonical"
+          href="https://rohini-plastics.vercel.app/services"
+        />
+      </Helmet>
       <PagetoTop
         pageTop_title="Our Services"
         first_link_name="Home"

@@ -30,6 +30,7 @@ import jaguar from "../../assests/clientts/jaguar.jpeg";
 import strapex from "../../assests/clientts/strapex.webp";
 import spica from "../../assests/clientts/Spica-logo.png";
 import netra from "../../assests/clientts/netra.png";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const coreValue = [
@@ -80,6 +81,20 @@ const About = () => {
   ];
   return (
     <>
+      <Helmet>
+        <title>About Rohini Plastics | plastic company near me</title>
+        <meta
+          name="description"
+          content="Learn about Rohini Plastics, a leading plastic molding company offering high-quality, durable plastic products for various industries. Trusted by clients for exceptional service and innovative solutions."
+        />
+
+        <meta
+          name="keywords"
+          content="Rohini Plastics, plastic company near me, plastic molding manufacturers, durable plastic products, industrial plastic solutions, custom plastic manufacturing, high-quality plastic materials, plastic product innovation, trusted plastic company"
+        />
+
+        <link rel="canonical" href="https://rohini-plastics.vercel.app/about" />
+      </Helmet>
       <PagetoTop
         pageTop_title="About Us"
         first_link_name="Home"
@@ -96,7 +111,7 @@ const About = () => {
               <h1 className="sub_heading">About Us</h1>
             </div>
             <p>
-              The company started its operations in 2004   under the name and
+              The company started its operations in 2004 under the name and
               style of "Rohini Plastic Products" and subsequently because of its
               quality and performance it was recognized in the field of
               manufacturing plastic products. At present we are manufacturing
@@ -105,10 +120,9 @@ const About = () => {
             </p>
             <p>
               The company has embarked on a modernization program to that end it
-              has chosen to go for quality management system as per AN <strong style={{color:`var(--accent)`}} >
-              ISO
-              9001:2015
-                </strong> in its organization.
+              has chosen to go for quality management system as per AN{" "}
+              <strong style={{ color: `var(--accent)` }}>ISO 9001:2015</strong>{" "}
+              in its organization.
             </p>
             <p>
               Company’s aims are to start marketing by our own with high growth
@@ -174,19 +188,18 @@ const About = () => {
           <h3>Our Clients</h3>
           <div class="client_list">
             {clients.slice(0, 4).map((item, index) => (
-            <div class="client_logo">
+              <div class="client_logo">
                 <img src={item.image} alt="" key={index} class="clients_logo" />
-            </div>
+              </div>
             ))}
           </div>
           <div class="client_list">
             {clients.slice(3, 8).map((item, index) => (
-            <div class="client_logo">
+              <div class="client_logo">
                 <img src={item.image} alt="" key={index} class="clients_logo" />
-            </div>
+              </div>
             ))}
           </div>
-         
         </div>
       </div>
 
