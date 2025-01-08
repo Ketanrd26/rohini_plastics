@@ -31,7 +31,7 @@ const Footer = () => {
     {
       link_name: "Contact Us",
       link_path: "/contact-us",
-    }
+    },
   ];
   return (
     <>
@@ -45,39 +45,50 @@ const Footer = () => {
               </h1>
             </div>
             <div class="bottom">
-              <a href="https://maps.app.goo.gl/kJ3vXRe2QmfiM6p18" target="blank" >
+              <a
+                href="https://maps.app.goo.gl/kJ3vXRe2QmfiM6p18"
+                target="blank"
+              >
                 Sr.No.17/1, Shri Ganesh Nagar, Sayaji Thakur Marga, Dhawde
                 Wasti, Bhosari, Pune - 39
               </a>
-              <a href="tel:+919850176707" target="blank" >
-              +919850176707
+              <a href="tel:+919850176707" target="blank">
+                +919850176707
               </a>
-              <a href="tel:+918796409908" target="blank" >
-              +918796409908
+              <a href="tel:+918796409908" target="blank">
+                +918796409908
               </a>
             </div>
           </div>
           <div class="middle">
             {navItem.map((item, index) => (
-              <Link key={index} to={item.link_path} >{item.link_name}</Link>
+              <Link key={index} to={item.link_path}>
+                {item.link_name}
+              </Link>
             ))}
           </div>
 
           <div class="privacy">
-            <Link  to="/privacy" > Privacy Policy</Link>
-            
+            <Link to="/privacy"> Privacy Policy</Link>
           </div>
           <div class="social_media_links">
-            <a class="icon" target="blank"  href="https://www.facebook.com/share/19nLfgs5Y9/">
+            <a
+              class="icon"
+              target="blank"
+              href="https://www.facebook.com/share/19nLfgs5Y9/"
+            >
               <FaFacebookF />
             </a>
-            <a class="icon"  target="blank" href="https://www.instagram.com/rohiniplastic?utm_source=qr&igsh=dWM0cG1rY2kwazY0" >
+            <a
+              class="icon"
+              target="blank"
+              href="https://www.instagram.com/rohiniplastic?utm_source=qr&igsh=dWM0cG1rY2kwazY0"
+            >
               <FaInstagram />
             </a>
-            <a class="icon" target="blank"  href="https://wa.me/+919850176707" >
+            <a class="icon" target="blank" href="https://wa.me/+919850176707">
               <FaWhatsapp />
             </a>
-            
           </div>
         </div>
         <div class="image">
@@ -108,6 +119,18 @@ const Footer = () => {
           </span>
           <p>Mail Now</p>
         </a>
+      </div>
+
+      <div class="after_footer parent">
+        <div class="after_footer_cont cont">
+          <p>
+            Copyright ©2023 All Rights Reserved | <a href="">Rohini Plastics</a>
+            |
+            <a href="https://wa.me/+917028997574">
+              Developed By wave solutions
+            </a>
+          </p>
+        </div>
       </div>
     </>
   );

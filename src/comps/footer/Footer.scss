@@ -124,6 +124,31 @@
 }
 
 
+.after_footer{
+  width: 100%;
+  background-color: var(--black);
+  
+  padding: 10px 0px;
+
+  .after_footer_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: grey;
+
+      a{
+        color: grey;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width:800px) {
   
   .footer_parent{

@@ -329,11 +329,12 @@ svg{
       justify-content: flex-start;
       align-items: flex-start;
       padding: 20px;
-      gap: var(--unit);
+      gap: calc(var(--unit)*2);
 
       .nav_link {
         font-size: calc(var(--unit) * 2);
         color: var(--white);
+        padding: 15px 0px;
       }
 
       .social_media_links {
