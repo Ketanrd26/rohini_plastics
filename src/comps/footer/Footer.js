@@ -28,6 +28,10 @@ const Footer = () => {
       link_name: "Our Products",
       link_path: "/products",
     },
+    {
+      link_name: "Contact Us",
+      link_path: "/contact-us",
+    }
   ];
   return (
     <>
@@ -45,6 +49,12 @@ const Footer = () => {
                 Sr.No.17/1, Shri Ganesh Nagar, Sayaji Thakur Marga, Dhawde
                 Wasti, Bhosari, Pune - 39
               </a>
+              <a href="tel:+919850176707" target="blank" >
+              +919850176707
+              </a>
+              <a href="tel:+918796409908" target="blank" >
+              +918796409908
+              </a>
             </div>
           </div>
           <div class="middle">
@@ -61,15 +71,13 @@ const Footer = () => {
             <a class="icon" target="blank"  href="https://www.facebook.com/share/19nLfgs5Y9/">
               <FaFacebookF />
             </a>
-            <a class="icon"  target="blank" >
+            <a class="icon"  target="blank" href="https://www.instagram.com/rohiniplastic?utm_source=qr&igsh=dWM0cG1rY2kwazY0" >
               <FaInstagram />
             </a>
             <a class="icon" target="blank"  href="https://wa.me/+919850176707" >
               <FaWhatsapp />
             </a>
-            <a class="icon" target="blank" href="https://www.google.com/search?q=rohin+plastic&rlz=1C1RXQR_enIN1021IN1021&oq=rohin&gs_lcrp=EgZjaHJvbWUqCAgCEEUYJxg7MgYIABBFGDwyBggBEEUYOTIICAIQRRgnGDsyBggDECMYJzIPCAQQLhhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxNWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8" >
-              <FaGoogle />
-            </a>
+            
           </div>
         </div>
         <div class="image">

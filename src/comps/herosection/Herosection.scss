@@ -149,6 +149,9 @@
 
                 .tagline{
                     width: 100%;
+                    .overlay{
+                      font-size: 24px;
+                    }
                 }
             }
           }
@@ -170,6 +173,28 @@
 @media only screen and (max-width: 900px) {
   .herosection_parent {
     padding-top: 0px;
+    .mySwiper {
+      .swiperslide {
+        .overlay {
+          flex-direction: column;
+
+         
+
+          .right {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            // justify-content: flex-start;
+            align-items: flex-start;
+
+            img {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+   
   }
 }
 

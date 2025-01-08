@@ -10,6 +10,8 @@ import { FaGoogle } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 const Header = () => {
   const navItem = [
     {
@@ -71,16 +73,21 @@ const Header = () => {
         <div class="header-right">
           <div class="top_section">
             <div class="list">
-              <a target="blank"  href="https://wa.me/+919850176707">
+              <a target="blank" href="https://wa.me/+919850176707">
                 <FaWhatsapp />
               </a>
-              <a target="blank" href="">
+              <a
+                target="blank"
+                href="https://www.instagram.com/rohiniplastic?utm_source=qr&igsh=dWM0cG1rY2kwazY0"
+              >
                 <FaInstagram />
               </a>
-              <a target="blank" href="https://www.google.com/search?q=rohin+plastic&rlz=1C1RXQR_enIN1021IN1021&oq=rohin&gs_lcrp=EgZjaHJvbWUqCAgCEEUYJxg7MgYIABBFGDwyBggBEEUYOTIICAIQRRgnGDsyBggDECMYJzIPCAQQLhhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxNWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8">
-                <FaGoogle />
+              <a
+                target="blank"
+                href="https://www.facebook.com/share/19nLfgs5Y9/"
+              >
+                <FaFacebookF />
               </a>
-        
             </div>
           </div>
           <div class="bottom_section">
@@ -120,9 +127,16 @@ const Header = () => {
           </div>
 
           <div class="hamburger" onClick={() => setMobNav(!mobNav)}>
-            <span></span>
-            <span></span>
-            <span></span>
+            {!mobNav ? (
+              <>
+                {" "}
+                <span></span>
+                <span></span>
+                <span></span>
+              </>
+            ) : (
+              <RxCross2 />
+            )}
           </div>
         </div>
 
@@ -143,7 +157,7 @@ const Header = () => {
 
               <Link
                 className="btn"
-                to="/contact"
+                to="/contact-us"
                 onClick={() => setMobNav(false)}
               >
                 <span class="inner_text">Contact us</span>
@@ -151,27 +165,28 @@ const Header = () => {
 
               <div class="social_media_links">
                 <a
-                   target="blank"  href="https://wa.me/+919850176707"
-                  className="social_l"
-                  onClick={() => setMobNav(false)}
+                  class="social_l"
+                  target="blank"
+                  href="https://www.facebook.com/share/19nLfgs5Y9/"
                 >
-                   <FaWhatsapp />
+                  <FaFacebookF />
                 </a>
                 <a
-                 target="blank" href=""
+                  target="blank"
+                  href="https://wa.me/+919850176707"
                   className="social_l"
                   onClick={() => setMobNav(false)}
                 >
-                     <FaInstagram />
+                  <FaWhatsapp />
                 </a>
                 <a
-                 target="blank" href="https://www.google.com/search?q=rohin+plastic&rlz=1C1RXQR_enIN1021IN1021&oq=rohin&gs_lcrp=EgZjaHJvbWUqCAgCEEUYJxg7MgYIABBFGDwyBggBEEUYOTIICAIQRRgnGDsyBggDECMYJzIPCAQQLhhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxNWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                  target="blank"
+                  href="https://www.instagram.com/rohiniplastic?utm_source=qr&igsh=dWM0cG1rY2kwazY0"
                   className="social_l"
                   onClick={() => setMobNav(false)}
                 >
-                   <FaGoogle />
+                  <FaInstagram />
                 </a>
-                
               </div>
             </div>
           </div>

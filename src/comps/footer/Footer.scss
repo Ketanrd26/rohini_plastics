@@ -39,6 +39,11 @@
       }
 
       .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: var(--unit);
         a{
           color: var(--text);
         font-family: 'Intelo';
@@ -106,8 +111,11 @@
 
   .image {
     position: absolute;
-    left: -2%;
-    bottom: 0;
+    right: 5%;
+    bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img{
         width: 50%;
@@ -170,7 +178,7 @@
         height: 100%;
         width: 100%;
         grid-area: 3 / 1 / 4 / 3; 
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         
       }
@@ -189,8 +197,7 @@
   position: fixed;
   bottom: 12.5%;
   right: 0;
-
-  z-index: 99999999;
+ z-index: 4;
 
   &.si2{
     bottom: 20%;

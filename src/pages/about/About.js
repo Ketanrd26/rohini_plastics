@@ -131,7 +131,7 @@ const About = () => {
           </div>
 
           <div class="right">
-            <div class="left">
+            <div class="left_image">
               <div class="top bg-img-cover"></div>
               <div class="bottom bg-img-cover"></div>
             </div>

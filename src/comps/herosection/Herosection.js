@@ -20,7 +20,7 @@ const Herosection = () => {
           spaceBetween={0}
           centeredSlides={true}
           autoplay={{
-            delay: 8000,
+            delay: 800000000,
             disableOnInteraction: false,
           }}
           loop
