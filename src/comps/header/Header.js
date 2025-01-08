@@ -71,13 +71,13 @@ const Header = () => {
         <div class="header-right">
           <div class="top_section">
             <div class="list">
-              <a href="">
+              <a target="blank"  href="https://wa.me/+919850176707">
                 <FaWhatsapp />
               </a>
-              <a href="">
+              <a target="blank" href="">
                 <FaInstagram />
               </a>
-              <a href="">
+              <a target="blank" href="https://www.google.com/search?q=rohin+plastic&rlz=1C1RXQR_enIN1021IN1021&oq=rohin&gs_lcrp=EgZjaHJvbWUqCAgCEEUYJxg7MgYIABBFGDwyBggBEEUYOTIICAIQRRgnGDsyBggDECMYJzIPCAQQLhhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxNWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8">
                 <FaGoogle />
               </a>
         
@@ -151,25 +151,27 @@ const Header = () => {
 
               <div class="social_media_links">
                 <a
-                  href=""
+                   target="blank"  href="https://wa.me/+919850176707"
                   className="social_l"
                   onClick={() => setMobNav(false)}
-                ></a>
+                >
+                   <FaWhatsapp />
+                </a>
                 <a
-                  href=""
+                 target="blank" href=""
                   className="social_l"
                   onClick={() => setMobNav(false)}
-                ></a>
+                >
+                     <FaInstagram />
+                </a>
                 <a
-                  href=""
+                 target="blank" href="https://www.google.com/search?q=rohin+plastic&rlz=1C1RXQR_enIN1021IN1021&oq=rohin&gs_lcrp=EgZjaHJvbWUqCAgCEEUYJxg7MgYIABBFGDwyBggBEEUYOTIICAIQRRgnGDsyBggDECMYJzIPCAQQLhhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxNWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
                   className="social_l"
                   onClick={() => setMobNav(false)}
-                ></a>
-                <a
-                  href=""
-                  className="social_l"
-                  onClick={() => setMobNav(false)}
-                ></a>
+                >
+                   <FaGoogle />
+                </a>
+                
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
           <div class="middle">
             {navItem.map((item, index) => (
-              <Link key={index} >{item.link_name}</Link>
+              <Link key={index} to={item.link_path} >{item.link_name}</Link>
             ))}
           </div>
 
@@ -58,16 +58,16 @@ const Footer = () => {
             
           </div>
           <div class="social_media_links">
-            <a class="icon">
+            <a class="icon" target="blank"  href="https://www.facebook.com/share/19nLfgs5Y9/">
               <FaFacebookF />
             </a>
-            <a class="icon">
+            <a class="icon"  target="blank" >
               <FaInstagram />
             </a>
-            <a class="icon">
+            <a class="icon" target="blank"  href="https://wa.me/+919850176707" >
               <FaWhatsapp />
             </a>
-            <a class="icon">
+            <a class="icon" target="blank" href="https://www.google.com/search?q=rohin+plastic&rlz=1C1RXQR_enIN1021IN1021&oq=rohin&gs_lcrp=EgZjaHJvbWUqCAgCEEUYJxg7MgYIABBFGDwyBggBEEUYOTIICAIQRRgnGDsyBggDECMYJzIPCAQQLhhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxNWowajeoAgiwAgE&sourceid=chrome&ie=UTF-8" >
               <FaGoogle />
             </a>
           </div>

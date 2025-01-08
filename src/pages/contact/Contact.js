@@ -36,6 +36,7 @@ const Contact = () => {
         console.error("Error during submission:", error);
       });
       formEle.reset();
+      alert("Thank you for contact rohini plastics")
   }
   
   
