@@ -105,7 +105,7 @@ const Footer = () => {
         </a>
       </div>
       <div class="social_icons si2">
-        <a class="icon" target="blank" href="tel:+919850176707">
+        <a class="icon" target="blank" href="tel:+918796409908">
           <span>
             <IoCallOutline />
           </span>

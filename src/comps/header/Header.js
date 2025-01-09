@@ -59,13 +59,13 @@ const Header = () => {
                 <p>rohiniplastic1@gmail.com</p>
               </div>
             </a>
-            <a class="location" target="blank" href="tel:+919850176707">
+            <a class="location" target="blank" href="tel:+918796409908">
               <div class="icon">
                 <IoCall />
               </div>
               <div class="content">
                 <h4>Contact Us</h4>
-                <p>+919850176707</p>
+                <p>+918796409908</p>
               </div>
             </a>
           </div>
@@ -116,15 +116,15 @@ const Header = () => {
           </div>
         </div>
         <div class="right">
-          <div class="location">
+          <a class="location"  href="tel:+918796409908" >
             <div class="icon">
               <IoCall />
             </div>
             <div class="content">
               <h4>Contact Us</h4>
-              <p>+919850176707</p>
+              <p> +918796409908</p>
             </div>
-          </div>
+          </a>
 
           <div class="hamburger" onClick={() => setMobNav(!mobNav)}>
             {!mobNav ? (
