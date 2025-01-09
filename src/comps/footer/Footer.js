@@ -124,7 +124,7 @@ const Footer = () => {
       <div class="after_footer parent">
         <div class="after_footer_cont cont">
           <p>
-            Copyright ©2023 All Rights Reserved | <a href="">Rohini Plastics</a>
+            Copyright ©2023 All Rights Reserved | <a href="https://rohiniplastic.com/">Rohini Plastics</a>
             |
             <a href="https://wa.me/+917028997574">
               Developed By wave solutions

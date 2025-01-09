@@ -7,8 +7,8 @@ function Privacy() {
       <div className="privacy-parent parent">
         <div className="privacy-cont cont">
           <h1>Privacy Policy</h1>
-          <p>Last updated: January 04, 2025</p> <a href="https://rohini-plastics.vercel.app/">
-          https://rohini-plastics.vercel.app/
+          <p>Last updated: January 04, 2025</p> <a href="https://rohiniplastic.com/">
+          https://rohiniplastic.com/
           </a>
           <p>
             This Privacy Policy describes Our policies and procedures on the
