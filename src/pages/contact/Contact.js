@@ -6,40 +6,37 @@ const Contact = () => {
 
   function Submit(e) {
     e.preventDefault(); // Prevent default form submission behavior
-  
+
     const formEle = document.querySelector("form"); // Ensure the form element is correctly selected
-  
+
     // Check if formEle is found
     if (!formEle) {
       console.error("Form element not found");
       return;
     }
-  
+
     const formDatab = new FormData(formEle);
-  
+
     fetch(
       "https://script.google.com/macros/s/AKfycbxZwAaBNLyzww4LfMZSE0PP94dN9tAS1NF16lsXaCK0zFY785IGdbQnxGhXqQZwoOw7/exec",
       {
         method: "POST",
-        body: formDatab
+        body: formDatab,
       }
     )
       .then((res) => res.json())
       .then((data) => {
         console.log("Data submitted successfully:", data);
         // Clear the form inputs
-       
       })
 
-    
       .catch((error) => {
         console.error("Error during submission:", error);
       });
-      formEle.reset();
-      alert("Thank you for contact rohini plastics")
+    formEle.reset();
+    alert("Thank you for contact rohini plastics");
   }
-  
-  
+
   return (
     <>
       <PagetoTop
@@ -62,18 +59,26 @@ const Contact = () => {
               </p>
             </div>
 
-            <form action=""   onSubmit={(e) => Submit(e)} >
+            <form action="" onSubmit={(e) => Submit(e)}>
               <input type="text" name="Name" placeholder="Name*" required />
-              <input type="text" name="Contact_number" placeholder="Contact Number*" required />
-              <input type="text" name="Organization_name" placeholder="Organization Name" />
-              <input type="text" name="Email_id" placeholder="Email Id"  />
+              <input
+                type="text"
+                name="Contact_number"
+                placeholder="Contact Number*"
+                required
+              />
+              <input
+                type="text"
+                name="Organization_name"
+                placeholder="Organization Name"
+              />
+              <input type="text" name="Email_id" placeholder="Email Id" />
               <textarea type="text" name="Message" placeholder="Message" />
-              <button className="btn" type="submit" >
-               <span class="inner_text">
-               Send message
-               </span>
+              <button className="btn" type="submit">
+                <span class="inner_text">Send message</span>
               </button>
             </form>
+            {/* <iframe src="https://maps.app.goo.gl/T9mRRp2fFHJsNLQe9" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe> */}
           </div>
         </div>
       </div>
