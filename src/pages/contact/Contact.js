@@ -16,9 +16,12 @@ const Contact = () => {
     }
 
     const formDatab = new FormData(formEle);
+    const date = new Date().toDateString();
+
+    formDatab.append("Date",date)
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbxZwAaBNLyzww4LfMZSE0PP94dN9tAS1NF16lsXaCK0zFY785IGdbQnxGhXqQZwoOw7/exec",
+      "https://script.google.com/macros/s/AKfycbzbavq7qvRGsvtXTJ3FB9DGWn7fh1pULXtIDA2TlR-H58pXYgmjKJgyzunwgIQkoNNj/exec",
       {
         method: "POST",
         body: formDatab,
