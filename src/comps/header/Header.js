@@ -108,12 +108,12 @@ const Header = () => {
 
       <div class="mobile_header parent">
         <div class="left">
-          <div class="logo">
+          <Link to="/" class="logo">
             <img src={logo} alt="" />
             <h1>
               Rohini <br /> Plastics
             </h1>
-          </div>
+          </Link>
         </div>
         <div class="right">
           <a class="location"  href="tel:+918796409908" >
@@ -142,7 +142,7 @@ const Header = () => {
 
         {mobNav && (
           <div class="mobsection-header parent">
-            <div class="overlay"></div>
+            {/* <div class="overlay"></div> */}
             <div class="navsection_item">
               {navItem.map((item, index) => (
                 <Link

@@ -706,6 +706,43 @@
     }
   }
 
+
+  .activities_parent{
+
+    .activities_cont{
+
+      .card_list{
+
+        .card{
+          width: 80%;
+        }
+      }
+    }
+  }
+
+
+  .how_it_works{
+    .how_its_work_cont{
+
+
+      .list{
+        .mySwiper{
+          .swiper_slide{
+
+            .card{
+
+              .bottom{
+                h3{
+                  font-size: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   // .testimoneal-parent {
   //   .right {
   //     aspect-ratio: 1 !important;

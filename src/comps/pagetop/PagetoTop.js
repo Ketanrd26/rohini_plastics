@@ -26,10 +26,10 @@ const PagetoTop = (props) => {
                         <Link to={props.first_link_path}>
                        {props.first_link_name}
                         </Link>
-                        /
+                        {/* /
                         <Link to={props.second_link_path}>
                         {props.second_link_name}
-                        </Link>
+                        </Link> */}
 
                      </div>
                     </div>

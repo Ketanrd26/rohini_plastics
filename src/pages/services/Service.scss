@@ -36,6 +36,30 @@
       }
     }
 
+    .tabs{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: calc(var(--unit));
+      // background-color: red;
+
+      .tabitem{
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 12px;
+        transition: var(--trans);
+        cursor: pointer;
+
+        &:hover{
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
     .service_list {
       display: flex;
       flex-direction: column;
