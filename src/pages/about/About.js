@@ -125,8 +125,8 @@ const About = () => {
               in its organization.
             </p>
             <p>
-              Company’s aims are to start marketing by our own with high growth
-              rate and new production technology.
+              Company’s aim is to produce more innovative products for wide
+              range of customer base.
             </p>
           </div>
 
